@@ -243,8 +243,9 @@ wire-пакета; подписи на нём нет, доверие от аут
 (целое). Канонический порядок: `avatarBytes`, `avatarHash`, `avatarSeed`,
 `avatarVersion`, `bio`, `name`, с пропуском nil.
 
-Имя должно в точности совпасть с `InputValidator.validateNickname(name)` и
-занимать <=64 байт. bio <=72 графем, <=640 UTF-8 байт, не содержит управляющих
+Имя должно в точности совпасть с `InputValidator.validateNickname(name)`:
+непустое после Foundation trim, <=50 графем, без controlCharacters, в NFC;
+дополнительно занимать <=64 байт. bio <=72 графем, <=640 UTF-8 байт, не содержит управляющих
 Unicode scalars кроме CharacterSet.newlines. Это строже карточки раздела 02.
 
 - С seed: avatarVersion=1, avatarHash отсутствует, avatarBytes=0. PNG

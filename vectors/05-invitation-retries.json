@@ -1,0 +1,225 @@
+{
+  "base_unix_seconds" : 1800000000,
+  "cases" : [
+    {
+      "action" : "request",
+      "control_json" : "{\"action\":\"request\",\"expiresAt\":1802592000000,\"id\":\"8469BD58-8679-4BA3-BCD0-B0DEAD679712\",\"recipient\":{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"uKpbt80aQBN2QO39BB/f52ySoiwH5xmGQITF0LHkpJkjIZ7spao2bBcBPpXE/HBNC20MX9DtPUJ1CUXERRUEBA==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Игорь\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"GJ73i/JVjHhyghSFt6qIyfxFsWCD0Yomw1Xrr2omxZhnpWC9ZI3utLSihLM1MweT416uAYkA6k+eHb/mskO2BA==\",\"signature\":\"vnch8zY8g9YkZORNLT3z/ovITXW2AqY0Ccxg/B4AqF6MKoTJubskAroaKPt4asRJTqwNAke7m9kgO3O+FhalDQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1},\"sender\":{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"8vImk7B6FU2+b3de7Pnfd5VSNf6hPCOQFtJCllWM0gkiBpf/PAuYe3PODmn+FEd2wcUWVZADZ4yL0oe+fW6WDw==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"wW94e6qVshfElhP4mdTV7LCOkWX3C90FhoR6gQ9jy+3nL8E4nUYLJ6y6NmNWcSHmC7+vH2dCBMYsiMudp4MzDA==\",\"signature\":\"ZPA7rGk1FiugYeTvPT+1zA6k3dHIrd1P0LSZHPSwFCLVKV9uGCs+km3M01PO6jlZ/IzTVqJn7pS9W2G2H/HXBQ==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1},\"signature\":\"05Y1YETTT9wcJvJ7nbO2zu8S1G53jN7ant5MT4n1W8RHqf8tYd71ouo6I2J1joXR5k5hDMTm97y59V2AKrt9BA==\",\"timestamp\":1800000000000,\"version\":1}",
+      "steps" : [
+        {
+          "attempts" : 1,
+          "elapsed_seconds" : 0,
+          "queued" : 1,
+          "sent" : 1
+        },
+        {
+          "attempts" : 1,
+          "elapsed_seconds" : 9,
+          "queued" : 1,
+          "sent" : 1
+        },
+        {
+          "attempts" : 2,
+          "elapsed_seconds" : 10,
+          "queued" : 1,
+          "sent" : 2
+        },
+        {
+          "attempts" : 2,
+          "elapsed_seconds" : 19,
+          "queued" : 1,
+          "sent" : 2
+        },
+        {
+          "attempts" : 2,
+          "elapsed_seconds" : 20,
+          "queued" : 1,
+          "sent" : 2
+        },
+        {
+          "attempts" : 2,
+          "elapsed_seconds" : 29,
+          "queued" : 1,
+          "sent" : 2
+        },
+        {
+          "attempts" : 3,
+          "elapsed_seconds" : 30,
+          "queued" : 1,
+          "sent" : 3
+        },
+        {
+          "attempts" : 3,
+          "elapsed_seconds" : 69,
+          "queued" : 1,
+          "sent" : 3
+        },
+        {
+          "attempts" : 4,
+          "elapsed_seconds" : 70,
+          "queued" : 1,
+          "sent" : 4
+        },
+        {
+          "attempts" : 4,
+          "elapsed_seconds" : 129,
+          "queued" : 1,
+          "sent" : 4
+        },
+        {
+          "attempts" : 5,
+          "elapsed_seconds" : 130,
+          "queued" : 1,
+          "sent" : 5
+        },
+        {
+          "attempts" : 5,
+          "elapsed_seconds" : 189,
+          "queued" : 1,
+          "sent" : 5
+        },
+        {
+          "attempts" : 6,
+          "elapsed_seconds" : 190,
+          "queued" : 1,
+          "sent" : 6
+        },
+        {
+          "attempts" : 6,
+          "elapsed_seconds" : 249,
+          "queued" : 1,
+          "sent" : 6
+        },
+        {
+          "attempts" : 7,
+          "elapsed_seconds" : 250,
+          "queued" : 1,
+          "sent" : 7
+        },
+        {
+          "attempts" : 7,
+          "elapsed_seconds" : 309,
+          "queued" : 1,
+          "sent" : 7
+        },
+        {
+          "attempts" : 8,
+          "elapsed_seconds" : 310,
+          "queued" : 1,
+          "sent" : 8
+        }
+      ]
+    },
+    {
+      "action" : "decline",
+      "control_json" : "{\"action\":\"decline\",\"expiresAt\":1802592000000,\"id\":\"6282556C-42D9-4D8F-BBCD-E959DDB3C1BF\",\"recipient\":{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"uKpbt80aQBN2QO39BB/f52ySoiwH5xmGQITF0LHkpJkjIZ7spao2bBcBPpXE/HBNC20MX9DtPUJ1CUXERRUEBA==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Игорь\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"GJ73i/JVjHhyghSFt6qIyfxFsWCD0Yomw1Xrr2omxZhnpWC9ZI3utLSihLM1MweT416uAYkA6k+eHb/mskO2BA==\",\"signature\":\"vnch8zY8g9YkZORNLT3z/ovITXW2AqY0Ccxg/B4AqF6MKoTJubskAroaKPt4asRJTqwNAke7m9kgO3O+FhalDQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1},\"sender\":{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"8vImk7B6FU2+b3de7Pnfd5VSNf6hPCOQFtJCllWM0gkiBpf/PAuYe3PODmn+FEd2wcUWVZADZ4yL0oe+fW6WDw==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"wW94e6qVshfElhP4mdTV7LCOkWX3C90FhoR6gQ9jy+3nL8E4nUYLJ6y6NmNWcSHmC7+vH2dCBMYsiMudp4MzDA==\",\"signature\":\"ZPA7rGk1FiugYeTvPT+1zA6k3dHIrd1P0LSZHPSwFCLVKV9uGCs+km3M01PO6jlZ/IzTVqJn7pS9W2G2H/HXBQ==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1},\"signature\":\"6+oiGspbx+Pc3RhkuDnC9PgkS2P4P4isGyOmKv1Fsw/Z6o9gfuluLYBQUPCEjv4mSIxTOUBc+Six+W8JM01bBA==\",\"timestamp\":1800000000000,\"version\":1}",
+      "steps" : [
+        {
+          "attempts" : 1,
+          "elapsed_seconds" : 0,
+          "queued" : 1,
+          "sent" : 1
+        },
+        {
+          "attempts" : 1,
+          "elapsed_seconds" : 9,
+          "queued" : 1,
+          "sent" : 1
+        },
+        {
+          "attempts" : 2,
+          "elapsed_seconds" : 10,
+          "queued" : 1,
+          "sent" : 2
+        },
+        {
+          "attempts" : 2,
+          "elapsed_seconds" : 19,
+          "queued" : 1,
+          "sent" : 2
+        },
+        {
+          "attempts" : 2,
+          "elapsed_seconds" : 20,
+          "queued" : 1,
+          "sent" : 2
+        },
+        {
+          "attempts" : 2,
+          "elapsed_seconds" : 29,
+          "queued" : 1,
+          "sent" : 2
+        },
+        {
+          "attempts" : 3,
+          "elapsed_seconds" : 30,
+          "queued" : 1,
+          "sent" : 3
+        },
+        {
+          "attempts" : 3,
+          "elapsed_seconds" : 69,
+          "queued" : 1,
+          "sent" : 3
+        },
+        {
+          "attempts" : 4,
+          "elapsed_seconds" : 70,
+          "queued" : 1,
+          "sent" : 4
+        },
+        {
+          "attempts" : 4,
+          "elapsed_seconds" : 129,
+          "queued" : 1,
+          "sent" : 4
+        },
+        {
+          "attempts" : 5,
+          "elapsed_seconds" : 130,
+          "queued" : 1,
+          "sent" : 5
+        },
+        {
+          "attempts" : 5,
+          "elapsed_seconds" : 189,
+          "queued" : 1,
+          "sent" : 5
+        },
+        {
+          "attempts" : 6,
+          "elapsed_seconds" : 190,
+          "queued" : 1,
+          "sent" : 6
+        },
+        {
+          "attempts" : 0,
+          "elapsed_seconds" : 249,
+          "queued" : 0,
+          "sent" : 6
+        },
+        {
+          "attempts" : 0,
+          "elapsed_seconds" : 250,
+          "queued" : 0,
+          "sent" : 6
+        },
+        {
+          "attempts" : 0,
+          "elapsed_seconds" : 309,
+          "queued" : 0,
+          "sent" : 6
+        },
+        {
+          "attempts" : 0,
+          "elapsed_seconds" : 310,
+          "queued" : 0,
+          "sent" : 6
+        }
+      ]
+    }
+  ],
+  "contact_card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"uKpbt80aQBN2QO39BB/f52ySoiwH5xmGQITF0LHkpJkjIZ7spao2bBcBPpXE/HBNC20MX9DtPUJ1CUXERRUEBA==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Игорь\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"GJ73i/JVjHhyghSFt6qIyfxFsWCD0Yomw1Xrr2omxZhnpWC9ZI3utLSihLM1MweT416uAYkA6k+eHb/mskO2BA==\",\"signature\":\"vnch8zY8g9YkZORNLT3z/ovITXW2AqY0Ccxg/B4AqF6MKoTJubskAroaKPt4asRJTqwNAke7m9kgO3O+FhalDQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+  "description" : "Actual BLE invitation retry schedule: four per pass, exponential delay, request unlimited and reply at most six offers. No radio or network.",
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift",
+  "own_card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"8vImk7B6FU2+b3de7Pnfd5VSNf6hPCOQFtJCllWM0gkiBpf/PAuYe3PODmn+FEd2wcUWVZADZ4yL0oe+fW6WDw==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"wW94e6qVshfElhP4mdTV7LCOkWX3C90FhoR6gQ9jy+3nL8E4nUYLJ6y6NmNWcSHmC7+vH2dCBMYsiMudp4MzDA==\",\"signature\":\"ZPA7rGk1FiugYeTvPT+1zA6k3dHIrd1P0LSZHPSwFCLVKV9uGCs+km3M01PO6jlZ/IzTVqJn7pS9W2G2H/HXBQ==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}"
+}

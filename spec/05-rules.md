@@ -241,9 +241,13 @@ attempts >=1: min(60, 5 * 2^min(attempts - 1, 4))
 | Свои messages | 4 | min(60, 10*max(1,attempts)) с; прямой адресат, иначе до 3 разных курьеров | До OK релея, потом ждать receipt |
 | relay | 8 | Прямому адресату каждые 30 с; иначе до 3 новых соседей | Через Nostr курьер не пересылает |
 | receipts | 8 | Каждые 30 с, прямому destination и до 8 новых соседей | Только собственный ACK, до OK |
-| invitation | До 8 | Не чаще 10 с; для ответов максимум 6 предложений | До OK / expiry; request не ограничен 6 BLE-попытками |
+| invitation | Первые 4 | 10, 20, 40, затем 60 с; для ответов максимум 6 предложений | До OK / expiry; request не ограничен 6 BLE-попытками |
 | retract/reaction | Первые 8 | Не чаще 10 с, максимум 6 предложений | До OK / expiry |
 | profileOutbox | 4 | Когда доступен прямой peer | Повтор до подписанного ACK profileID |
+
+Для invitation задержка BLE = min(60, 10 * 2^min(max(attempts - 1, 0), 3)) с.
+Request продолжает BLE-повторы без лимита 6; accept/decline ограничены 6.
+Это отдельная ветка `routeInvitationControls`, не generic `route`.
 
 Для profileOutbox задержка min(3600, 5 * 2^min(attempts,10)) с, attempts
 ограничен 20. Подтверждение релея очередь профиля не завершает.
@@ -288,9 +292,15 @@ ownProfileCard и заменяет profileOutbox для всех незабло�
 | `05-delivery.json` | accepted/pending/blocked, sender pinning, legacy/plaintext/reply границы, дубли, conflicting digest, clear и повтор |
 | `05-invitations.json` | 18 переходов фаз, tie одновременных запросов по стабильному ID |
 | `05-newest-signals.json` | Порядок реакций, removal tombstone, typing/presence с равным timestamp и разными UUID |
+| `05-invitation-retries.json` | BLE-расписание request/decline, лимит ответов 6, продолжение request |
 | `05-outbox.json` | Реальные интервалы повторов, OK релея против receipt, delivered → read без отката |
 
 ## Вопросы
+
+При реализации Rust исправлена ошибка прежнего черновика: для invitation
+были указаны 8 пакетов и постоянные 10 с, но текущий Swift задаёт первые 4
+и экспоненциальный BLE-интервал. Контракт iOS не менялся. Отдельный
+Swift-пример `05-invitation-retries.json` проверяет actual schedule.
 
 1. **Invitation не имеет общего newest-wins.** Помимо специального request
    в accepted и exact eventID, timestamp не отсекает старые accept/decline.

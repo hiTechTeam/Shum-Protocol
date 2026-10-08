@@ -57,7 +57,7 @@
 «должно получиться ровно это».
 
 Генератор: `Shum-iOS/ShumTests/Protocol/ShumProtocolVectorTests.swift`.
-Последняя полная проверка: **20 тестов в одной suite, passed**, iOS `5b8efc8`,
+Последняя полная проверка: **21 тест в одной suite, passed**, iOS `5b8efc8`,
 симулятор iPhone 17 Pro `9374725C-1A19-4568-A06B-AAB02E8DBCD2`.
 Запуск из `Shum-iOS`:
 
