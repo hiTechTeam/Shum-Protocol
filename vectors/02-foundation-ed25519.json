@@ -1,0 +1,69 @@
+{
+  "description" : "Actual Foundation whitespace scalar set and CryptoKit Ed25519 edge verification on this simulator.",
+  "ed25519_cases" : [
+    {
+      "label" : "valid",
+      "message_hex" : "65646765",
+      "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
+      "signature" : "cc6057f740c00a16174774bcd3edb592c7fb4b46f89ada2845e8b04022ed38ea71aed5a69802896effb6bdbfa6d3fbba52c1fca90a2e8f457262f0227de1c10f",
+      "swift_valid" : true
+    },
+    {
+      "label" : "identity-public-and-R-zero-S",
+      "message_hex" : "65646765",
+      "public_key" : "0100000000000000000000000000000000000000000000000000000000000000",
+      "signature" : "01000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "swift_valid" : true
+    },
+    {
+      "label" : "zero-public-and-R-zero-S",
+      "message_hex" : "65646765",
+      "public_key" : "0000000000000000000000000000000000000000000000000000000000000000",
+      "signature" : "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "swift_valid" : true
+    },
+    {
+      "label" : "noncanonical-public",
+      "message_hex" : "65646765",
+      "public_key" : "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "signature" : "cc6057f740c00a16174774bcd3edb592c7fb4b46f89ada2845e8b04022ed38ea71aed5a69802896effb6bdbfa6d3fbba52c1fca90a2e8f457262f0227de1c10f",
+      "swift_valid" : false
+    },
+    {
+      "label" : "noncanonical-S",
+      "message_hex" : "65646765",
+      "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
+      "signature" : "cc6057f740c00a16174774bcd3edb592c7fb4b46f89ada2845e8b04022ed38eaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "swift_valid" : false
+    }
+  ],
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift",
+  "whitespace_scalars" : [
+    9,
+    10,
+    11,
+    12,
+    13,
+    32,
+    133,
+    160,
+    5760,
+    8192,
+    8193,
+    8194,
+    8195,
+    8196,
+    8197,
+    8198,
+    8199,
+    8200,
+    8201,
+    8202,
+    8203,
+    8232,
+    8233,
+    8239,
+    8287,
+    12288
+  ]
+}

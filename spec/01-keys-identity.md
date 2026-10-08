@@ -1,5 +1,14 @@
 # 01. Ключи и личность
 
+Примеры изображения v1: `vectors/01-avatar-pixels.json`, настоящий
+`ShumPixelAvatarGenerator.image(seed:)` на iOS `5b8efc8`. Для 35 семян
+сохранены sRGB RGBA сетки 18×18 и 36×36, включая все четыре kind.
+Источник рисует основные блоки 20×20 и детали 10×10 на изображении 360×360.
+Поэтому сетка 18×18 является только выборкой центров, точная минимальная
+сетка с деталями 36×36. Алгоритм и палитра v1 не меняются.
+Исходная картинка непрозрачна; удаление фона в терминале относится к
+представлению клиента и не должно менять профиль или seed.
+
 Черновик. Источник: `ShumIdentityService.swift`, `NoiseEncryptionService.swift`,
 `NostrIdentity.swift`, `NostrIdentityBridge.swift`, `ShumPixelAvatarGenerator.swift`,
 `BitFoundation/PeerID.swift`.
