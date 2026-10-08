@@ -19,10 +19,10 @@
 | Виды пакетов | [spec/04-packets.md](spec/04-packets.md) | черновик, примеры проверены Swift |
 | Правила приёма и слияния | [spec/05-rules.md](spec/05-rules.md) | черновик, примеры проверены Swift |
 | Транспорт Bluetooth | [spec/06-transport-bluetooth.md](spec/06-transport-bluetooth.md) | черновик, примеры проверены Swift |
-| Транспорт Nostr | spec/07-transport-nostr.md | не начат |
+| Транспорт Nostr | [spec/07-transport-nostr.md](spec/07-transport-nostr.md) | черновик, примеры проверены Swift |
 | API push-сервера | spec/08-push-api.md | не начат |
 | Хранилище на устройстве (SQLite) | spec/09-storage.md | не начат |
-| Тестовые примеры | [vectors/](vectors/) | для разделов 01–06 |
+| Тестовые примеры | [vectors/](vectors/) | для разделов 01–07 |
 
 ## Как читать
 
