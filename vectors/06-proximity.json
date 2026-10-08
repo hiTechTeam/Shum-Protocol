@@ -1,0 +1,51 @@
+{
+  "cases" : [
+    {
+      "expired_meters" : null,
+      "meters" : 1,
+      "rssi" : [
+        -59
+      ]
+    },
+    {
+      "expired_meters" : null,
+      "meters" : 10,
+      "rssi" : [
+        -79
+      ]
+    },
+    {
+      "expired_meters" : null,
+      "meters" : 1,
+      "rssi" : [
+        -49
+      ]
+    },
+    {
+      "expired_meters" : null,
+      "meters" : 1,
+      "rssi" : [
+        -80,
+        -60,
+        -70,
+        -50
+      ]
+    },
+    {
+      "expired_meters" : null,
+      "meters" : null,
+      "rssi" : [
+        127
+      ]
+    },
+    {
+      "expired_meters" : null,
+      "meters" : 2512,
+      "rssi" : [
+        -127
+      ]
+    }
+  ],
+  "description" : "Actual median RSSI estimate and exact 30-second expiry.",
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift"
+}

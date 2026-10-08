@@ -1,0 +1,49 @@
+{
+  "description" : "Actual Noise XX, empty prologue, fixed ephemeral keys, transport 4-byte BE counter. Replay result records current Swift behavior, including any replay-window defect.",
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift",
+  "handshake_hash" : "ff328bdf8abcedb81a5b852159df18eb0e151d2c91a35c13c1833d7a7962e0ea",
+  "handshake_messages_hex" : [
+    "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826",
+    "2172a8118f4137202bcc3f75e06dedcd6d8df5d2ed34ad0d4ee01935ae50d27385d9f3bd075fa04c740382f7b7fc249717423e9e89bdd321abfee25c837a98ee2a3f3813d0ca9c3749ceffab171c7372ebcbe8ce51e8c8219bc18a66766bd315",
+    "8cc36e6cbcbce59aeca8dc2c2e5b30702f847bb07b846cc939cfeeb5da18a8306650f2345415ece463a0c1085554ac9bf5d51f80e92cc2be98ac75c6f5252c6b"
+  ],
+  "initiator_ephemeral_private_key" : "a50f50a52ca0002e35169a73474faa8cd25cfde667654e1916c99594f0057d19",
+  "initiator_keys" : {
+    "noise_private_key" : "7e8dea06a21baaf0dbfc7a216853f803bb49556359d45094fd2f01fed8e8d49c",
+    "noise_public_key" : "29b9e001c2d683fb7be5db839288fe26e8a1c56221b367ffa143bdce0765312b",
+    "nostr_private_key" : "5624207d076e3c94233c4c864426079e53a2bc25e03a480a448ebbd10769875d",
+    "nostr_public_key" : "4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723",
+    "signing_private_key" : "928211e0fcbc0945b472d362d59b8a71c916c981ee093e2d384a2ba5ccde3b69",
+    "signing_public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e"
+  },
+  "responder_ephemeral_private_key" : "fa3e484dbdeb45f00f6e5c6c938c441d08686443440e4971c1464d8f67f155b9",
+  "responder_keys" : {
+    "noise_private_key" : "3d15a9b6e29252efc4da6d38010a75582e2a20c46dff0c72ee9dd5100bd7e174",
+    "noise_public_key" : "699ad0d30193934f818b308a561458235a32d82c8c7cb00dbe40000f550aa600",
+    "nostr_private_key" : "43095fd76659f27444eb34c2ee8929d99c2c08e861e3b3f9a239f1537ab26783",
+    "nostr_public_key" : "ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6",
+    "signing_private_key" : "559492c086e0948271b138e4d6706882a640dec92cd3f84bd3004605ef814651",
+    "signing_public_key" : "87b87a9aee265ff11d0904d6b4e93f11568cafb5935c3b01449c301182b96ac2"
+  },
+  "swift_replay_zero_after_one_accepted" : true,
+  "traffic" : [
+    {
+      "ciphertext_hex" : "000000000a708f3a9341770dc441c02db45df739868d1c",
+      "direction" : "initiator-to-responder",
+      "plaintext_hex" : "417b7d",
+      "swift_plaintext_hex" : "417b7d"
+    },
+    {
+      "ciphertext_hex" : "0000000157a944942ad8d87cae1a39a1ba14072285da08",
+      "direction" : "initiator-to-responder",
+      "plaintext_hex" : "417b7d",
+      "swift_plaintext_hex" : "417b7d"
+    },
+    {
+      "ciphertext_hex" : "00000000ebeb00f78a9ed88da9eaa57a4567e31ca7754c",
+      "direction" : "responder-to-initiator",
+      "plaintext_hex" : "400102",
+      "swift_plaintext_hex" : "400102"
+    }
+  ]
+}
