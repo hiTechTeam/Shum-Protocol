@@ -21,8 +21,8 @@
 | Транспорт Bluetooth | [spec/06-transport-bluetooth.md](spec/06-transport-bluetooth.md) | черновик, примеры проверены Swift |
 | Транспорт Nostr | [spec/07-transport-nostr.md](spec/07-transport-nostr.md) | черновик, примеры проверены Swift |
 | API push-сервера | [spec/08-push-api.md](spec/08-push-api.md) | черновик, примеры проверены Swift |
-| Хранилище на устройстве (SQLite) | spec/09-storage.md | не начат |
-| Тестовые примеры | [vectors/](vectors/) | для разделов 01–08 |
+| Хранилище на устройстве (SQLite) | [spec/09-storage.md](spec/09-storage.md) | черновик, примеры проверены Swift |
+| Тестовые примеры | [vectors/](vectors/) | для разделов 01–09 |
 
 ## Как читать
 
@@ -55,3 +55,21 @@
 дают разные байты при каждом запуске. Для них пример устроен как «вот подпись
 или шифротекст из Swift, клиент должен их проверить или расшифровать», а не
 «должно получиться ровно это».
+
+Генератор: `Shum-iOS/ShumTests/Protocol/ShumProtocolVectorTests.swift`.
+Последняя полная проверка: **18 тестов в одной suite, passed**, iOS `5b8efc8`,
+симулятор iPhone 17 Pro `9374725C-1A19-4568-A06B-AAB02E8DBCD2`.
+Запуск из `Shum-iOS`:
+
+```sh
+xcodebuild test -project ShumiOS.xcodeproj -scheme Shum \
+  -destination 'platform=iOS Simulator,id=9374725C-1A19-4568-A06B-AAB02E8DBCD2' \
+  -parallel-testing-enabled NO \
+  -only-testing:ShumTests/ShumProtocolVectorTests \
+  -disableAutomaticPackageResolution -skipPackageUpdates
+```
+
+Повторный запуск перезаписывает случайные подписи/nonce в фикстурах.
+Ошибки аутентификации в логе отрицательных тестов ожидаемы.
+Известный дефект replay-window Swift записан в разделе 06 и отдельно в
+`06-noise-xx.json`; он требует явного решения для реализации Rust.
