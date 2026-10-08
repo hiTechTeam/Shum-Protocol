@@ -17,12 +17,12 @@
 | Карточка контакта и приглашения | [spec/02-contact-card.md](spec/02-contact-card.md) | черновик, примеры есть |
 | Конверт сообщения | [spec/03-envelope.md](spec/03-envelope.md) | черновик, примеры проверены Swift |
 | Виды пакетов | [spec/04-packets.md](spec/04-packets.md) | черновик, примеры проверены Swift |
-| Правила приёма и слияния | spec/05-rules.md | не начат |
+| Правила приёма и слияния | [spec/05-rules.md](spec/05-rules.md) | черновик, примеры проверены Swift |
 | Транспорт Bluetooth | spec/06-transport-bluetooth.md | не начат |
 | Транспорт Nostr | spec/07-transport-nostr.md | не начат |
 | API push-сервера | spec/08-push-api.md | не начат |
 | Хранилище на устройстве (SQLite) | spec/09-storage.md | не начат |
-| Тестовые примеры | [vectors/](vectors/) | для разделов 01–04 |
+| Тестовые примеры | [vectors/](vectors/) | для разделов 01–05 |
 
 ## Как читать
 

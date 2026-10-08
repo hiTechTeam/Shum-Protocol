@@ -1,0 +1,165 @@
+{
+  "base_unix_seconds" : 1800000000,
+  "contact_card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"UEoY78Wy2dwkqYNc3WFNBY0QbPMDay3DUoZWQ8qpidzg7I+NJOga4jlIuLOFYybIsflwwY2/isSQGXeJATOCCw==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Игорь\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"PU4OscH/EUb1HH40bbwO69Mofvr8Mpw6TkopcQmewhfnkSizRORlfcHW3SebGg5MHo3rVKqcos5JKyfUyv4QDA==\",\"signature\":\"DSc7nimxguUFebdao+B+H+kDQIR+uQVZRNF79d1FUna7WMYxSriX492gLIa8eW8BuqCFWr8X3Tks7eSJnqMHBQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+  "description" : "Actual Nostr retry schedule, relay acceptance versus recipient ACK, delivered/read monotonicity. Internet is an in-memory substitute.",
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift",
+  "message_json" : "{\"attempts\":0,\"envelope\":{\"ciphertext\":\"WZ4hNO1zQ80EQyGGD6VZE0PX9s0YLNXuHiZHf9IIxyJLUNVFMUkFi0HMXgNU1xdVWZxZMaFR2rr4pl/cr/130BaIBee61JZKuFI1lvyZpIrtTcObNMCaLtUCFx/is4+/Clq7oe/UOFYKWhNaO0mOnOA+PPO1oRPggGBEeu9Yy+/W8GMh64wL1w1GKbdi241/s3tf42+BEu0BTPRWmmoXEftwvc5uqbFiRVuXRzW80RdyT8J/3JnT0zwGbTC9wKcYks09ozb9fCm+sn60fB/78ItjlMoAuVef5KEU2rR/KwnZeHsAZAMGjtLIUah37jSl5rg1pcundeb9A7/+RF20A8WPfx1oUejnJ6M3/qFYIERIhXCSoc9mAa+9cUFC7GbTKR+Ucz0eRmsQ9iJmMEZgdOvoj4wSw2NeGMSc+JwVQv17rO8aVRniMXSID++LbQkacPYnvVMbbXL5Qh9rtYn3d79xQgHNCGze4amCm8IMLN50tRDVne3qkBE+9dinWDDi8++UHPLiOLA6aNDFTxpPuN/CSUXV3zROv0lPxR4UrPrq9Pr6r9Az3axV4FJWJHEJAVPvVb25e0tknq5dy2DD/JcWxKy2MAUfLAStSQUSNy4fEJQoVFpvq7l4nopGM8BKZjvF3je1EcC7gZg=\",\"conversationID\":\"5ec675558029c9ec25a860d2602ea882acf87615d3851fdc9f8128ea179929a2\",\"expiresAt\":1800086400000,\"hopLimit\":4,\"id\":\"EB551A12-3BC5-43AE-8E64-4786E3745086\",\"recipient\":{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"UEoY78Wy2dwkqYNc3WFNBY0QbPMDay3DUoZWQ8qpidzg7I+NJOga4jlIuLOFYybIsflwwY2/isSQGXeJATOCCw==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Игорь\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"PU4OscH/EUb1HH40bbwO69Mofvr8Mpw6TkopcQmewhfnkSizRORlfcHW3SebGg5MHo3rVKqcos5JKyfUyv4QDA==\",\"signature\":\"DSc7nimxguUFebdao+B+H+kDQIR+uQVZRNF79d1FUna7WMYxSriX492gLIa8eW8BuqCFWr8X3Tks7eSJnqMHBQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1},\"sender\":{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"MUfGVLJLkJTRoe8siXfPbinMdfK4+RzIcqBqxUG7Yjvzm3GDEUYRNWopY+Sy9mW/zX0zSulFN8xcJen5uVsrAA==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"MQ4Whq0+q/3dhag+h4i93NylJkAS8wduFVie698G/0XQnw3uW6g/TThOy/X3ZCyI7aZHc0C/58hzt8VXlPdyAw==\",\"signature\":\"0rMzRNxVR1jsI8LvxGCW6RPw1iad76xumexdAVlFBdgqXGXbxbofd4gBAdJZ03y6FVpwsQItE19OuRjwnmYuDw==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1},\"signature\":\"QZa4bHBDZQUguJ+7/ceqAXcOCXHtFpWKMlghLuTH4OrUx/H54xQRbjBtLSg9PZJ+KX77nbGmdCRBY6IgzcXUDg==\",\"timestamp\":1800000000000,\"version\":1},\"forwardedTo\":[],\"hopCount\":0,\"lastAttempt\":-63114076800,\"lastNostrAttempt\":821692800,\"nostrAccepted\":false,\"nostrAttempts\":1,\"outgoing\":true,\"status\":\"queued\",\"text\":\"Привет\",\"unread\":false}",
+  "own_card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"MUfGVLJLkJTRoe8siXfPbinMdfK4+RzIcqBqxUG7Yjvzm3GDEUYRNWopY+Sy9mW/zX0zSulFN8xcJen5uVsrAA==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"MQ4Whq0+q/3dhag+h4i93NylJkAS8wduFVie698G/0XQnw3uW6g/TThOy/X3ZCyI7aZHc0C/58hzt8VXlPdyAw==\",\"signature\":\"0rMzRNxVR1jsI8LvxGCW6RPw1iad76xumexdAVlFBdgqXGXbxbofd4gBAdJZ03y6FVpwsQItE19OuRjwnmYuDw==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
+  "receipt_packets_json" : [
+    "{\"receipt\":{\"destination\":{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"MUfGVLJLkJTRoe8siXfPbinMdfK4+RzIcqBqxUG7Yjvzm3GDEUYRNWopY+Sy9mW/zX0zSulFN8xcJen5uVsrAA==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"MQ4Whq0+q/3dhag+h4i93NylJkAS8wduFVie698G/0XQnw3uW6g/TThOy/X3ZCyI7aZHc0C/58hzt8VXlPdyAw==\",\"signature\":\"0rMzRNxVR1jsI8LvxGCW6RPw1iad76xumexdAVlFBdgqXGXbxbofd4gBAdJZ03y6FVpwsQItE19OuRjwnmYuDw==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1},\"digest\":\"7aede466ae375dc8458fff0cdaf91fba38d679d0e94558a3bac0da3710b398a6\",\"envelopeID\":\"EB551A12-3BC5-43AE-8E64-4786E3745086\",\"expiresAt\":1800086400000,\"read\":false,\"sender\":{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"UEoY78Wy2dwkqYNc3WFNBY0QbPMDay3DUoZWQ8qpidzg7I+NJOga4jlIuLOFYybIsflwwY2/isSQGXeJATOCCw==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Игорь\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"PU4OscH/EUb1HH40bbwO69Mofvr8Mpw6TkopcQmewhfnkSizRORlfcHW3SebGg5MHo3rVKqcos5JKyfUyv4QDA==\",\"signature\":\"DSc7nimxguUFebdao+B+H+kDQIR+uQVZRNF79d1FUna7WMYxSriX492gLIa8eW8BuqCFWr8X3Tks7eSJnqMHBQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1},\"signature\":\"pyfmRiG7WAV6RUbU53m4mtqJe1YPAlyM2pWmj95Vg++IRsIuV5mTJx+DZjOg4RLyYm/wq0+7251qKMK48vvvCQ==\",\"timestamp\":1800000195000},\"version\":1}",
+    "{\"receipt\":{\"destination\":{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"MUfGVLJLkJTRoe8siXfPbinMdfK4+RzIcqBqxUG7Yjvzm3GDEUYRNWopY+Sy9mW/zX0zSulFN8xcJen5uVsrAA==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"MQ4Whq0+q/3dhag+h4i93NylJkAS8wduFVie698G/0XQnw3uW6g/TThOy/X3ZCyI7aZHc0C/58hzt8VXlPdyAw==\",\"signature\":\"0rMzRNxVR1jsI8LvxGCW6RPw1iad76xumexdAVlFBdgqXGXbxbofd4gBAdJZ03y6FVpwsQItE19OuRjwnmYuDw==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1},\"digest\":\"7aede466ae375dc8458fff0cdaf91fba38d679d0e94558a3bac0da3710b398a6\",\"envelopeID\":\"EB551A12-3BC5-43AE-8E64-4786E3745086\",\"expiresAt\":1800086400000,\"read\":true,\"sender\":{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"UEoY78Wy2dwkqYNc3WFNBY0QbPMDay3DUoZWQ8qpidzg7I+NJOga4jlIuLOFYybIsflwwY2/isSQGXeJATOCCw==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Игорь\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"PU4OscH/EUb1HH40bbwO69Mofvr8Mpw6TkopcQmewhfnkSizRORlfcHW3SebGg5MHo3rVKqcos5JKyfUyv4QDA==\",\"signature\":\"DSc7nimxguUFebdao+B+H+kDQIR+uQVZRNF79d1FUna7WMYxSriX492gLIa8eW8BuqCFWr8X3Tks7eSJnqMHBQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1},\"signature\":\"yx/Njkai/WjcDZWOXkuEHsmgP5Poqn6Y3tIs08dR+KL3UOytvmgoKknTlgRQaXZLTpvWEhbQxBDYXVQnvJvjAQ==\",\"timestamp\":1800000195000},\"version\":1}",
+    "{\"receipt\":{\"destination\":{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"MUfGVLJLkJTRoe8siXfPbinMdfK4+RzIcqBqxUG7Yjvzm3GDEUYRNWopY+Sy9mW/zX0zSulFN8xcJen5uVsrAA==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"MQ4Whq0+q/3dhag+h4i93NylJkAS8wduFVie698G/0XQnw3uW6g/TThOy/X3ZCyI7aZHc0C/58hzt8VXlPdyAw==\",\"signature\":\"0rMzRNxVR1jsI8LvxGCW6RPw1iad76xumexdAVlFBdgqXGXbxbofd4gBAdJZ03y6FVpwsQItE19OuRjwnmYuDw==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1},\"digest\":\"7aede466ae375dc8458fff0cdaf91fba38d679d0e94558a3bac0da3710b398a6\",\"envelopeID\":\"EB551A12-3BC5-43AE-8E64-4786E3745086\",\"expiresAt\":1800086400000,\"read\":false,\"sender\":{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"UEoY78Wy2dwkqYNc3WFNBY0QbPMDay3DUoZWQ8qpidzg7I+NJOga4jlIuLOFYybIsflwwY2/isSQGXeJATOCCw==\",\"avatarVersion\":1,\"bio\":\"\",\"name\":\"Игорь\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"PU4OscH/EUb1HH40bbwO69Mofvr8Mpw6TkopcQmewhfnkSizRORlfcHW3SebGg5MHo3rVKqcos5JKyfUyv4QDA==\",\"signature\":\"DSc7nimxguUFebdao+B+H+kDQIR+uQVZRNF79d1FUna7WMYxSriX492gLIa8eW8BuqCFWr8X3Tks7eSJnqMHBQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1},\"signature\":\"H5JMt9kmzLoroDL6gmJDHmnHgdgPRLJ2ay2NNXpiq8zxpXSYEOxakC7Ecphd+5QGCQEbaMyrPRb7KSN2fkS5Aw==\",\"timestamp\":1800000195000},\"version\":1}"
+  ],
+  "steps" : [
+    {
+      "action" : "send",
+      "elapsed_seconds" : 0,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 1,
+      "nostr_envelopes" : 1,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "tick",
+      "elapsed_seconds" : 4,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 1,
+      "nostr_envelopes" : 1,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "tick",
+      "elapsed_seconds" : 5,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 2,
+      "nostr_envelopes" : 2,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "tick",
+      "elapsed_seconds" : 14,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 2,
+      "nostr_envelopes" : 2,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "tick",
+      "elapsed_seconds" : 15,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 3,
+      "nostr_envelopes" : 3,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "tick",
+      "elapsed_seconds" : 34,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 3,
+      "nostr_envelopes" : 3,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "tick",
+      "elapsed_seconds" : 35,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 4,
+      "nostr_envelopes" : 4,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "tick",
+      "elapsed_seconds" : 74,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 4,
+      "nostr_envelopes" : 4,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "tick",
+      "elapsed_seconds" : 75,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 5,
+      "nostr_envelopes" : 5,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "tick",
+      "elapsed_seconds" : 134,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 5,
+      "nostr_envelopes" : 5,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "tick",
+      "elapsed_seconds" : 135,
+      "nostr_accepted" : false,
+      "nostr_attempts" : 6,
+      "nostr_envelopes" : 6,
+      "receipt_count" : 0,
+      "status" : "queued",
+      "text" : "Привет"
+    },
+    {
+      "action" : "relay-accepts",
+      "elapsed_seconds" : 195,
+      "nostr_accepted" : true,
+      "nostr_attempts" : 7,
+      "nostr_envelopes" : 7,
+      "receipt_count" : 0,
+      "status" : "forwarding",
+      "text" : "Привет"
+    },
+    {
+      "action" : "delivered",
+      "elapsed_seconds" : 195,
+      "nostr_accepted" : true,
+      "nostr_attempts" : 7,
+      "nostr_envelopes" : 7,
+      "receipt_count" : 1,
+      "status" : "delivered",
+      "text" : "Привет"
+    },
+    {
+      "action" : "read",
+      "elapsed_seconds" : 195,
+      "nostr_accepted" : true,
+      "nostr_attempts" : 7,
+      "nostr_envelopes" : 7,
+      "receipt_count" : 1,
+      "status" : "read",
+      "text" : "Привет"
+    },
+    {
+      "action" : "delivered",
+      "elapsed_seconds" : 195,
+      "nostr_accepted" : true,
+      "nostr_attempts" : 7,
+      "nostr_envelopes" : 7,
+      "receipt_count" : 1,
+      "status" : "read",
+      "text" : "Привет"
+    }
+  ]
+}
