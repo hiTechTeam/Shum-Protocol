@@ -3,37 +3,37 @@
     {
       "message_hex" : "",
       "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
-      "signature" : "246a26e12afd0dd598f3e60c872a868b7ba78f8fba16300f654f29e16ee2ed354e5565924f2b43fede07337b3ffe907cecd85cca70e13fcc9cf790db158ae707",
+      "signature" : "5e4dc7933a62a4046b8e67335d2698d65036b6ec37187c5c707861227baf81d9e24e82ec18d585b9982177a76008657593cefb729ffae76a5c50aec4f0c3b802",
       "valid" : true
     },
     {
       "message_hex" : "",
       "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
-      "signature" : "256a26e12afd0dd598f3e60c872a868b7ba78f8fba16300f654f29e16ee2ed354e5565924f2b43fede07337b3ffe907cecd85cca70e13fcc9cf790db158ae707",
+      "signature" : "5f4dc7933a62a4046b8e67335d2698d65036b6ec37187c5c707861227baf81d9e24e82ec18d585b9982177a76008657593cefb729ffae76a5c50aec4f0c3b802",
       "valid" : false
     },
     {
       "message_hex" : "7368756d",
       "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
-      "signature" : "d61a82da67d29544daf0f80d1cd8360b656aaf1baced9eae8f845d9701528129571445023381b9f9fa9b10bcf40690c1092a5ddf2a7e20ee790962d3f5f66a08",
+      "signature" : "dd4fb194a8798ea7021e6d556994a3369d26562cb14dd005f90cdc9aac10173e8cc49f81feb9aae4052b842c0899bbc4b7820f9cf364c4c97d92d56aa7e5aa0b",
       "valid" : true
     },
     {
       "message_hex" : "7368756d",
       "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
-      "signature" : "d71a82da67d29544daf0f80d1cd8360b656aaf1baced9eae8f845d9701528129571445023381b9f9fa9b10bcf40690c1092a5ddf2a7e20ee790962d3f5f66a08",
+      "signature" : "dc4fb194a8798ea7021e6d556994a3369d26562cb14dd005f90cdc9aac10173e8cc49f81feb9aae4052b842c0899bbc4b7820f9cf364c4c97d92d56aa7e5aa0b",
       "valid" : false
     },
     {
       "message_hex" : "d09fd180d0b8d0b2d0b5d1822c205368756d20e29895efb88f",
       "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
-      "signature" : "8ad298b03d65027688f8e35f9b6b6d9c5f3f206a006bd06532f26e26ed829f42a95619554a725964c6436efcf82ac0219ef3e8097d22547d902323cddf267706",
+      "signature" : "209b1aaa5ee4e166ad6f3921dfeaffd8ac2a819131d549fce2a97d2057c60406a3113490add48cf581cf98efb96587745aab4ec58b3418354e195e0645d7c008",
       "valid" : true
     },
     {
       "message_hex" : "d09fd180d0b8d0b2d0b5d1822c205368756d20e29895efb88f",
       "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
-      "signature" : "8bd298b03d65027688f8e35f9b6b6d9c5f3f206a006bd06532f26e26ed829f42a95619554a725964c6436efcf82ac0219ef3e8097d22547d902323cddf267706",
+      "signature" : "219b1aaa5ee4e166ad6f3921dfeaffd8ac2a819131d549fce2a97d2057c60406a3113490add48cf581cf98efb96587745aab4ec58b3418354e195e0645d7c008",
       "valid" : false
     }
   ],

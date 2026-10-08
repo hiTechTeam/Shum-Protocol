@@ -1,41 +1,41 @@
 {
-  "c4_payload_hex" : "0401699ad0d30193934f818b308a561458235a32d82c8c7cb00dbe40000f550aa60087b87a9aee265ff11d0904d6b4e93f11568cafb5935c3b01449c301182b96ac2ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a606d090d0bdd18f003ad094d0b8d0b7d0b0d0b9d0bdd0b5d1802c20d0bbd18ed0b1d0bbd18e20d0bad0bed184d0b520d0b820d0bdd0b0d181d182d0bed0bbd0bad0b82e05017282f0fce35c010100000000000000c81607d87bc804f31db699e5f36ba59eae0bf2b1eea2eec124651c43e8431ebb5fa6dacd9991310ae3d54d4ad06ce1910b865253c088b49f742c59a36043450c",
+  "c4_payload_hex" : "0401699ad0d30193934f818b308a561458235a32d82c8c7cb00dbe40000f550aa60087b87a9aee265ff11d0904d6b4e93f11568cafb5935c3b01449c301182b96ac2ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a606d090d0bdd18f003ad094d0b8d0b7d0b0d0b9d0bdd0b5d1802c20d0bbd18ed0b1d0bbd18e20d0bad0bed184d0b520d0b820d0bdd0b0d181d182d0bed0bbd0bad0b82e05017282f0fce35c01010000000000000094bb649acc04e4a047a5da31fa22cc7569080cba25e6a6935fc79e4bceb7722fbc67c13aaace9d1c83768624a4d7dc966d63a77773f29b6e77ff8f8ec0ba6a07",
   "cases" : [
     {
       "label" : "c4",
       "result" : {
-        "card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarVersion\":1,\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"yBYH2HvIBPMdtpnl82ulnq4L8rHuou7BJGUcQ+hDHrtfptrNmZExCuPVTUrQbOGRC4ZSU8CItJ90LFmjYENFDA==\",\"signature\":\"\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
+        "card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarVersion\":1,\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"lLtkmswE5KBHpdox+iLMdWkIDLol5qaTX8eeS863ci+8Z8E6qs6dHIN2hiSk19yWbWOnd3Pym253/4+OwLpqBw==\",\"signature\":\"\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
         "kind" : "card",
         "valid" : true
       },
-      "url" : "shum://c4/BAFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguBQFygvD841wBAQAAAAAAAADIFgfYe8gE8x22meXza6Wergvyse6i7sEkZRxD6EMeu1-m2s2ZkTEK49VNStBs4ZELhlJTwIi0n3QsWaNgQ0UM"
+      "url" : "shum://c4/BAFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguBQFygvD841wBAQAAAAAAAACUu2SazATkoEel2jH6Isx1aQgMuiXmppNfx55LzrdyL7xnwTqqzp0cg3aGJKTX3JZtY6d3c_Kbbnf_j47AumoH"
     },
     {
       "label" : "c-legacy",
       "result" : {
-        "card_json" : "{\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"signature\":\"vqEvyuvRFV0toPS6RrCcpAVRTl6Mgz8Mr+hBPtGN5vrBYcV+z6LDBNjM+wO2eef5D8AcfBNKMFIyXRhntUoOCg==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
+        "card_json" : "{\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"signature\":\"wEVwyGBA1d0bjy6uFAYqyL1H8If42Gvs6nBB/15hkMe8sEj7kKpkeZxIBG7NcCxYUzs4aKkaxysMdR8yLM+qCQ==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
         "kind" : "card",
         "valid" : true
       },
-      "url" : "shum://c/AQFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguvqEvyuvRFV0toPS6RrCcpAVRTl6Mgz8Mr-hBPtGN5vrBYcV-z6LDBNjM-wO2eef5D8AcfBNKMFIyXRhntUoOCg"
+      "url" : "shum://c/AQFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguwEVwyGBA1d0bjy6uFAYqyL1H8If42Gvs6nBB_15hkMe8sEj7kKpkeZxIBG7NcCxYUzs4aKkaxysMdR8yLM-qCQ"
     },
     {
       "label" : "https-invite",
       "result" : {
-        "card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarVersion\":1,\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"yBYH2HvIBPMdtpnl82ulnq4L8rHuou7BJGUcQ+hDHrtfptrNmZExCuPVTUrQbOGRC4ZSU8CItJ90LFmjYENFDA==\",\"signature\":\"\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
+        "card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarVersion\":1,\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"lLtkmswE5KBHpdox+iLMdWkIDLol5qaTX8eeS863ci+8Z8E6qs6dHIN2hiSk19yWbWOnd3Pym253/4+OwLpqBw==\",\"signature\":\"\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
         "kind" : "card",
         "valid" : true
       },
-      "url" : "https://shum.example/invite#c4/BAFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguBQFygvD841wBAQAAAAAAAADIFgfYe8gE8x22meXza6Wergvyse6i7sEkZRxD6EMeu1-m2s2ZkTEK49VNStBs4ZELhlJTwIi0n3QsWaNgQ0UM"
+      "url" : "https://shum.example/invite#c4/BAFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguBQFygvD841wBAQAAAAAAAACUu2SazATkoEel2jH6Isx1aQgMuiXmppNfx55LzrdyL7xnwTqqzp0cg3aGJKTX3JZtY6d3c_Kbbnf_j47AumoH"
     },
     {
       "label" : "c3-from-spec-layout",
       "result" : {
-        "card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"1SOo5BJIfveKKcjiwZ8gbaOBShtCvnHiUNbAMfKwd2i22/40FiS4exTNwBHwcF9mE3snNbtZ+CFLVmIV8Fs5AA==\",\"avatarVersion\":1,\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"yBYH2HvIBPMdtpnl82ulnq4L8rHuou7BJGUcQ+hDHrtfptrNmZExCuPVTUrQbOGRC4ZSU8CItJ90LFmjYENFDA==\",\"signature\":\"vqEvyuvRFV0toPS6RrCcpAVRTl6Mgz8Mr+hBPtGN5vrBYcV+z6LDBNjM+wO2eef5D8AcfBNKMFIyXRhntUoOCg==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
+        "card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"lAJrfKLgPUxml44nEHlVSYtQ6UtX+qEuDe9CjA18CN8XPvvsXyO5c5uYjAwLK2WPq2YbRhIQKCSwNyzIP2biAg==\",\"avatarVersion\":1,\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"lLtkmswE5KBHpdox+iLMdWkIDLol5qaTX8eeS863ci+8Z8E6qs6dHIN2hiSk19yWbWOnd3Pym253/4+OwLpqBw==\",\"signature\":\"wEVwyGBA1d0bjy6uFAYqyL1H8If42Gvs6nBB/15hkMe8sEj7kKpkeZxIBG7NcCxYUzs4aKkaxysMdR8yLM+qCQ==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
         "kind" : "card",
         "valid" : true
       },
-      "url" : "shum://c3/AwFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguvqEvyuvRFV0toPS6RrCcpAVRTl6Mgz8Mr-hBPtGN5vrBYcV-z6LDBNjM-wO2eef5D8AcfBNKMFIyXRhntUoOCgUBcoLw_ONcAQEAAAAAAAAA1SOo5BJIfveKKcjiwZ8gbaOBShtCvnHiUNbAMfKwd2i22_40FiS4exTNwBHwcF9mE3snNbtZ-CFLVmIV8Fs5AMgWB9h7yATzHbaZ5fNrpZ6uC_Kx7qLuwSRlHEPoQx67X6bazZmRMQrj1U1K0GzhkQuGUlPAiLSfdCxZo2BDRQw"
+      "url" : "shum://c3/AwFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguwEVwyGBA1d0bjy6uFAYqyL1H8If42Gvs6nBB_15hkMe8sEj7kKpkeZxIBG7NcCxYUzs4aKkaxysMdR8yLM-qCQUBcoLw_ONcAQEAAAAAAAAAlAJrfKLgPUxml44nEHlVSYtQ6UtX-qEuDe9CjA18CN8XPvvsXyO5c5uYjAwLK2WPq2YbRhIQKCSwNyzIP2biApS7ZJrMBOSgR6XaMfoizHVpCAy6Jeamk1_HnkvOt3IvvGfBOqrOnRyDdoYkpNfclm1jp3dz8ptud_-PjsC6agc"
     },
     {
       "label" : "c2-locator",
@@ -49,25 +49,25 @@
     {
       "label" : "contact-json",
       "result" : {
-        "card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"1SOo5BJIfveKKcjiwZ8gbaOBShtCvnHiUNbAMfKwd2i22/40FiS4exTNwBHwcF9mE3snNbtZ+CFLVmIV8Fs5AA==\",\"avatarVersion\":1,\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"yBYH2HvIBPMdtpnl82ulnq4L8rHuou7BJGUcQ+hDHrtfptrNmZExCuPVTUrQbOGRC4ZSU8CItJ90LFmjYENFDA==\",\"signature\":\"vqEvyuvRFV0toPS6RrCcpAVRTl6Mgz8Mr+hBPtGN5vrBYcV+z6LDBNjM+wO2eef5D8AcfBNKMFIyXRhntUoOCg==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
+        "card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"lAJrfKLgPUxml44nEHlVSYtQ6UtX+qEuDe9CjA18CN8XPvvsXyO5c5uYjAwLK2WPq2YbRhIQKCSwNyzIP2biAg==\",\"avatarVersion\":1,\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"lLtkmswE5KBHpdox+iLMdWkIDLol5qaTX8eeS863ci+8Z8E6qs6dHIN2hiSk19yWbWOnd3Pym253/4+OwLpqBw==\",\"signature\":\"wEVwyGBA1d0bjy6uFAYqyL1H8If42Gvs6nBB/15hkMe8sEj7kKpkeZxIBG7NcCxYUzs4aKkaxysMdR8yLM+qCQ==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}",
         "kind" : "card",
         "valid" : true
       },
-      "url" : "shum://contact?data=eyJzaWduaW5nS2V5IjoiaDdoNm11NG1YXC9FZENRVFd0T2tcL0VWYU1yN1dUWERzQlJKd3dFWUs1YXNJPSIsIm5vaXNlS2V5IjoiYVpyUTB3R1RrMCtCaXpDS1ZoUllJMW95MkN5TWZMQU52a0FBRDFVS3BnQT0iLCJ2ZXJzaW9uIjoxLCJuYW1lIjoi0JDQvdGPIiwiYXZhdGFyVmVyc2lvbiI6MSwicHJvZmlsZVNpZ25hdHVyZSI6InlCWUgySHZJQlBNZHRwbmw4MnVsbnE0TDhySHVvdTdCSkdVY1EraERIcnRmcHRyTm1aRXhDdVBWVFVyUWJPR1JDNFpTVThDSXRKOTBMRm1qWUVORkRBPT0iLCJzaWduYXR1cmUiOiJ2cUV2eXV2UkZWMHRvUFM2UnJDY3BBVlJUbDZNZ3o4TXIraEJQdEdONXZyQlljVit6NkxEQk5qTSt3TzJlZWY1RDhBY2ZCTktNRkl5WFJobnRVb09DZz09IiwiYXZhdGFyU2VlZCI6NjY5MzQ3MTU4MTExMzU0OTA2MSwiYmlvIjoi0JTQuNC30LDQudC90LXRgCwg0LvRjtCx0LvRjiDQutC+0YTQtSDQuCDQvdCw0YHRgtC+0LvQutC4LiIsIm5vc3RyS2V5IjoiZmY1ZjdlNjRlMzgyNjMyNjVlZWNjZTg0YTYyMDVmMjNiNGNjNWVmODBhOTM3NjJkOGQ3YTdiM2ZkZjY0NDlhNiIsImF2YXRhclNlZWRTaWduYXR1cmUiOiIxU09vNUJKSWZ2ZUtLY2ppd1o4Z2JhT0JTaHRDdm5IaVVOYkFNZkt3ZDJpMjJcLzQwRmlTNGV4VE53Qkh3Y0Y5bUUzc25OYnRaK0NGTFZtSVY4RnM1QUE9PSIsInByb2ZpbGVSZXZpc2lvbiI6MX0%3D"
+      "url" : "shum://contact?data=eyJhdmF0YXJTZWVkU2lnbmF0dXJlIjoibEFKcmZLTGdQVXhtbDQ0bkVIbFZTWXRRNlV0WCtxRXVEZTlDakExOENOOFhQdnZzWHlPNWM1dVlqQXdMSzJXUHEyWWJSaElRS0NTd055eklQMmJpQWc9PSIsInZlcnNpb24iOjEsIm5vc3RyS2V5IjoiZmY1ZjdlNjRlMzgyNjMyNjVlZWNjZTg0YTYyMDVmMjNiNGNjNWVmODBhOTM3NjJkOGQ3YTdiM2ZkZjY0NDlhNiIsImJpbyI6ItCU0LjQt9Cw0LnQvdC10YAsINC70Y7QsdC70Y4g0LrQvtGE0LUg0Lgg0L3QsNGB0YLQvtC70LrQuC4iLCJwcm9maWxlUmV2aXNpb24iOjEsInNpZ25hdHVyZSI6IndFVnd5R0JBMWQwYmp5NnVGQVlxeUwxSDhJZjQyR3ZzNm5CQlwvMTVoa01lOHNFajdrS3BrZVp4SUJHN05jQ3hZVXpzNGFLa2F4eXNNZFI4eUxNK3FDUT09Iiwic2lnbmluZ0tleSI6Img3aDZtdTRtWFwvRWRDUVRXdE9rXC9FVmFNcjdXVFhEc0JSSnd3RVlLNWFzST0iLCJub2lzZUtleSI6ImFaclEwd0dUazArQml6Q0tWaFJZSTFveTJDeU1mTEFOdmtBQUQxVUtwZ0E9IiwiYXZhdGFyVmVyc2lvbiI6MSwicHJvZmlsZVNpZ25hdHVyZSI6ImxMdGttc3dFNUtCSHBkb3graUxNZFdrSURMb2w1cWFUWDhlZVM4NjNjaSs4WjhFNnFzNmRISU4yaGlTazE5eVdiV09uZDNQeW0yNTNcLzQrT3dMcHFCdz09IiwibmFtZSI6ItCQ0L3RjyIsImF2YXRhclNlZWQiOjY2OTM0NzE1ODExMTM1NDkwNjF9"
     },
     {
       "label" : "c4-trailing-byte",
       "result" : {
         "valid" : false
       },
-      "url" : "shum://c4/BAFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguBQFygvD841wBAQAAAAAAAADIFgfYe8gE8x22meXza6Wergvyse6i7sEkZRxD6EMeu1-m2s2ZkTEK49VNStBs4ZELhlJTwIi0n3QsWaNgQ0UMAA"
+      "url" : "shum://c4/BAFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguBQFygvD841wBAQAAAAAAAACUu2SazATkoEel2jH6Isx1aQgMuiXmppNfx55LzrdyL7xnwTqqzp0cg3aGJKTX3JZtY6d3c_Kbbnf_j47AumoHAA"
     },
     {
       "label" : "c4-payload-under-c3-host",
       "result" : {
         "valid" : false
       },
-      "url" : "shum://c3/BAFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguBQFygvD841wBAQAAAAAAAADIFgfYe8gE8x22meXza6Wergvyse6i7sEkZRxD6EMeu1-m2s2ZkTEK49VNStBs4ZELhlJTwIi0n3QsWaNgQ0UM"
+      "url" : "shum://c3/BAFpmtDTAZOTT4GLMIpWFFgjWjLYLIx8sA2-QAAPVQqmAIe4epruJl_xHQkE1rTpPxFWjK-1k1w7AUScMBGCuWrC_19-ZOOCYyZe7M6EpiBfI7TMXvgKk3YtjXp7P99kSaYG0JDQvdGPADrQlNC40LfQsNC50L3QtdGALCDQu9GO0LHQu9GOINC60L7RhNC1INC4INC90LDRgdGC0L7Qu9C60LguBQFygvD841wBAQAAAAAAAACUu2SazATkoEel2jH6Isx1aQgMuiXmppNfx55LzrdyL7xnwTqqzp0cg3aGJKTX3JZtY6d3c_Kbbnf_j47AumoH"
     }
   ],
   "description" : "Invitation links and what Swift ShumInvitationPayload.parse returns. card_json of a parsed card is canonical JSON.",
@@ -80,5 +80,5 @@
     "signing_private_key" : "559492c086e0948271b138e4d6706882a640dec92cd3f84bd3004605ef814651",
     "signing_public_key" : "87b87a9aee265ff11d0904d6b4e93f11568cafb5935c3b01449c301182b96ac2"
   },
-  "source_card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"1SOo5BJIfveKKcjiwZ8gbaOBShtCvnHiUNbAMfKwd2i22/40FiS4exTNwBHwcF9mE3snNbtZ+CFLVmIV8Fs5AA==\",\"avatarVersion\":1,\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"yBYH2HvIBPMdtpnl82ulnq4L8rHuou7BJGUcQ+hDHrtfptrNmZExCuPVTUrQbOGRC4ZSU8CItJ90LFmjYENFDA==\",\"signature\":\"vqEvyuvRFV0toPS6RrCcpAVRTl6Mgz8Mr+hBPtGN5vrBYcV+z6LDBNjM+wO2eef5D8AcfBNKMFIyXRhntUoOCg==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}"
+  "source_card_json" : "{\"avatarSeed\":6693471581113549061,\"avatarSeedSignature\":\"lAJrfKLgPUxml44nEHlVSYtQ6UtX+qEuDe9CjA18CN8XPvvsXyO5c5uYjAwLK2WPq2YbRhIQKCSwNyzIP2biAg==\",\"avatarVersion\":1,\"bio\":\"Дизайнер, люблю кофе и настолки.\",\"name\":\"Аня\",\"noiseKey\":\"aZrQ0wGTk0+BizCKVhRYI1oy2CyMfLANvkAAD1UKpgA=\",\"nostrKey\":\"ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6\",\"profileRevision\":1,\"profileSignature\":\"lLtkmswE5KBHpdox+iLMdWkIDLol5qaTX8eeS863ci+8Z8E6qs6dHIN2hiSk19yWbWOnd3Pym253/4+OwLpqBw==\",\"signature\":\"wEVwyGBA1d0bjy6uFAYqyL1H8If42Gvs6nBB/15hkMe8sEj7kKpkeZxIBG7NcCxYUzs4aKkaxysMdR8yLM+qCQ==\",\"signingKey\":\"h7h6mu4mX/EdCQTWtOk/EVaMr7WTXDsBRJwwEYK5asI=\",\"version\":1}"
 }
