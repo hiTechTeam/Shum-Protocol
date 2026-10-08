@@ -1,0 +1,132 @@
+{
+  "cases" : [
+    {
+      "ciphertext_hex" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826e22b19c6401dbfc4849dcf7d92ac42c9fba90249b6e54c44f9560b336a29046e58b5860b90bfb87fb6fd923166e59950a693bcd7cffd8bad35b8252eeddefb1b",
+      "ephemeral_private_key" : "a50f50a52ca0002e35169a73474faa8cd25cfde667654e1916c99594f0057d19",
+      "label" : "a-to-b-empty",
+      "negative_cases" : [
+        {
+          "ciphertext_hex" : "9e6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826e22b19c6401dbfc4849dcf7d92ac42c9fba90249b6e54c44f9560b336a29046e58b5860b90bfb87fb6fd923166e59950a693bcd7cffd8bad35b8252eeddefb1b",
+          "label" : "flipped-ephemeral",
+          "swift_valid" : false
+        },
+        {
+          "ciphertext_hex" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826e22b19c6401dbfc4849dcf7d92ac42c9fba90249b6e54c44f9560b336a29046e58b5860b90bfb87fb6fd923166e59950a693bcd7cffd8bad35b8252eeddefb",
+          "label" : "truncated-tag",
+          "swift_valid" : false
+        },
+        {
+          "ciphertext_hex" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826e22b19c6401dbfc4849dcf7d92ac42c9fba90249b6e54c44f9560b336a29046e58b5860b90bfb87fb6fd923166e59950a693bcd7cffd8bad35b8252eeddefb1b",
+          "label" : "wrong-recipient",
+          "recipient_private_key" : "a50f50a52ca0002e35169a73474faa8cd25cfde667654e1916c99594f0057d19",
+          "swift_valid" : false
+        }
+      ],
+      "plaintext_hex" : "",
+      "recipient_keys" : {
+        "noise_private_key" : "3d15a9b6e29252efc4da6d38010a75582e2a20c46dff0c72ee9dd5100bd7e174",
+        "noise_public_key" : "699ad0d30193934f818b308a561458235a32d82c8c7cb00dbe40000f550aa600",
+        "nostr_private_key" : "43095fd76659f27444eb34c2ee8929d99c2c08e861e3b3f9a239f1537ab26783",
+        "nostr_public_key" : "ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6",
+        "signing_private_key" : "559492c086e0948271b138e4d6706882a640dec92cd3f84bd3004605ef814651",
+        "signing_public_key" : "87b87a9aee265ff11d0904d6b4e93f11568cafb5935c3b01449c301182b96ac2"
+      },
+      "sender_keys" : {
+        "noise_private_key" : "7e8dea06a21baaf0dbfc7a216853f803bb49556359d45094fd2f01fed8e8d49c",
+        "noise_public_key" : "29b9e001c2d683fb7be5db839288fe26e8a1c56221b367ffa143bdce0765312b",
+        "nostr_private_key" : "5624207d076e3c94233c4c864426079e53a2bc25e03a480a448ebbd10769875d",
+        "nostr_public_key" : "4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723",
+        "signing_private_key" : "928211e0fcbc0945b472d362d59b8a71c916c981ee093e2d384a2ba5ccde3b69",
+        "signing_public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e"
+      },
+      "service_ciphertext_hex" : "8ead7851101e8d64ee616749c2201da91d00dd4e1966b772ef457ad25ea40e4cb586e95dcac51b1d1b1e8eae38527e6cec00ba1e68dab03d651d14fabaefef1314db8e09cab8541b5929d03b1e62337c58053890e8a271cc6bfa5c00d14e99d0",
+      "swift_sender_static_key" : "29b9e001c2d683fb7be5db839288fe26e8a1c56221b367ffa143bdce0765312b"
+    },
+    {
+      "ciphertext_hex" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826e22b19c6401dbfc4849dcf7d92ac42c9fba90249b6e54c44f9560b336a29046e58b5860b90bfb87fb6fd923166e59950654443c68987ee8fd236a741429d8816dd761ad34bb13c954bc58565bc8542a85745fb7f98c998ba49",
+      "ephemeral_private_key" : "a50f50a52ca0002e35169a73474faa8cd25cfde667654e1916c99594f0057d19",
+      "label" : "a-to-b-unicode",
+      "negative_cases" : [
+        {
+          "ciphertext_hex" : "9e6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826e22b19c6401dbfc4849dcf7d92ac42c9fba90249b6e54c44f9560b336a29046e58b5860b90bfb87fb6fd923166e59950654443c68987ee8fd236a741429d8816dd761ad34bb13c954bc58565bc8542a85745fb7f98c998ba49",
+          "label" : "flipped-ephemeral",
+          "swift_valid" : false
+        },
+        {
+          "ciphertext_hex" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826e22b19c6401dbfc4849dcf7d92ac42c9fba90249b6e54c44f9560b336a29046e58b5860b90bfb87fb6fd923166e59950654443c68987ee8fd236a741429d8816dd761ad34bb13c954bc58565bc8542a85745fb7f98c998ba",
+          "label" : "truncated-tag",
+          "swift_valid" : false
+        },
+        {
+          "ciphertext_hex" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826e22b19c6401dbfc4849dcf7d92ac42c9fba90249b6e54c44f9560b336a29046e58b5860b90bfb87fb6fd923166e59950654443c68987ee8fd236a741429d8816dd761ad34bb13c954bc58565bc8542a85745fb7f98c998ba49",
+          "label" : "wrong-recipient",
+          "recipient_private_key" : "a50f50a52ca0002e35169a73474faa8cd25cfde667654e1916c99594f0057d19",
+          "swift_valid" : false
+        }
+      ],
+      "plaintext_hex" : "d09fd180d0b8d0b2d0b5d1822c205368756d20e29895efb88f",
+      "recipient_keys" : {
+        "noise_private_key" : "3d15a9b6e29252efc4da6d38010a75582e2a20c46dff0c72ee9dd5100bd7e174",
+        "noise_public_key" : "699ad0d30193934f818b308a561458235a32d82c8c7cb00dbe40000f550aa600",
+        "nostr_private_key" : "43095fd76659f27444eb34c2ee8929d99c2c08e861e3b3f9a239f1537ab26783",
+        "nostr_public_key" : "ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6",
+        "signing_private_key" : "559492c086e0948271b138e4d6706882a640dec92cd3f84bd3004605ef814651",
+        "signing_public_key" : "87b87a9aee265ff11d0904d6b4e93f11568cafb5935c3b01449c301182b96ac2"
+      },
+      "sender_keys" : {
+        "noise_private_key" : "7e8dea06a21baaf0dbfc7a216853f803bb49556359d45094fd2f01fed8e8d49c",
+        "noise_public_key" : "29b9e001c2d683fb7be5db839288fe26e8a1c56221b367ffa143bdce0765312b",
+        "nostr_private_key" : "5624207d076e3c94233c4c864426079e53a2bc25e03a480a448ebbd10769875d",
+        "nostr_public_key" : "4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723",
+        "signing_private_key" : "928211e0fcbc0945b472d362d59b8a71c916c981ee093e2d384a2ba5ccde3b69",
+        "signing_public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e"
+      },
+      "service_ciphertext_hex" : "7cc3e4a2001e0c6e7a2f1e5b71f0b1bbc7ba29939966b56f65eda4b3b5db5d1cdfa6b0ae8fc85e0b2487ac9534cf368a74ffb9f5718410a9196f598c6ab1de7ca64585de47504d4739cd56fa2308dcbeac8a3f3230c0905139ba32b845e57568e33a3a9675255ff69ed5d0075bab1fdabe65e16bc22d2c8a52",
+      "swift_sender_static_key" : "29b9e001c2d683fb7be5db839288fe26e8a1c56221b367ffa143bdce0765312b"
+    },
+    {
+      "ciphertext_hex" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826608c32cf95e9213650ae4a61f2fb0c442fd94bab6b921f2ba3f68eae2935af4b85e985285f531a1cd86ed50367390d6e3bd74a789fdac391433885093baa01cfcbb78ea8a1fcadbfa64e0f744d28a12695e4004249055a9d5ba0293e630e79728e3c81f454aa6fa1f13d00dcda5f4971318cc603d26fddfae3a48e306e13c5cec0d87110c3e28280ea235a84c22a2ef1a0950a0c1ececf514559bd3fec3b73a1cdfbe117e6d5e0282b661819795d5ec3e12dbf7892e4b5451480127ab0dedcd7780698fa4ea550825edff5c4af914b73c5fa408b0bdbaf5e469eaf74fd176a825ccfdc62b465a47f1332dbd7fdb5237af550ddff55a48c45f4ea2ea0380f37b4194597d44f1e67d097d22b554a6a2461708282b21210c279137ca0c5c6048730b0da08dd48e4098c854db5893502a2880954f26353e1df275e4e84aba4d6edc1",
+      "ephemeral_private_key" : "a50f50a52ca0002e35169a73474faa8cd25cfde667654e1916c99594f0057d19",
+      "label" : "b-to-a-binary",
+      "negative_cases" : [
+        {
+          "ciphertext_hex" : "9e6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826608c32cf95e9213650ae4a61f2fb0c442fd94bab6b921f2ba3f68eae2935af4b85e985285f531a1cd86ed50367390d6e3bd74a789fdac391433885093baa01cfcbb78ea8a1fcadbfa64e0f744d28a12695e4004249055a9d5ba0293e630e79728e3c81f454aa6fa1f13d00dcda5f4971318cc603d26fddfae3a48e306e13c5cec0d87110c3e28280ea235a84c22a2ef1a0950a0c1ececf514559bd3fec3b73a1cdfbe117e6d5e0282b661819795d5ec3e12dbf7892e4b5451480127ab0dedcd7780698fa4ea550825edff5c4af914b73c5fa408b0bdbaf5e469eaf74fd176a825ccfdc62b465a47f1332dbd7fdb5237af550ddff55a48c45f4ea2ea0380f37b4194597d44f1e67d097d22b554a6a2461708282b21210c279137ca0c5c6048730b0da08dd48e4098c854db5893502a2880954f26353e1df275e4e84aba4d6edc1",
+          "label" : "flipped-ephemeral",
+          "swift_valid" : false
+        },
+        {
+          "ciphertext_hex" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826608c32cf95e9213650ae4a61f2fb0c442fd94bab6b921f2ba3f68eae2935af4b85e985285f531a1cd86ed50367390d6e3bd74a789fdac391433885093baa01cfcbb78ea8a1fcadbfa64e0f744d28a12695e4004249055a9d5ba0293e630e79728e3c81f454aa6fa1f13d00dcda5f4971318cc603d26fddfae3a48e306e13c5cec0d87110c3e28280ea235a84c22a2ef1a0950a0c1ececf514559bd3fec3b73a1cdfbe117e6d5e0282b661819795d5ec3e12dbf7892e4b5451480127ab0dedcd7780698fa4ea550825edff5c4af914b73c5fa408b0bdbaf5e469eaf74fd176a825ccfdc62b465a47f1332dbd7fdb5237af550ddff55a48c45f4ea2ea0380f37b4194597d44f1e67d097d22b554a6a2461708282b21210c279137ca0c5c6048730b0da08dd48e4098c854db5893502a2880954f26353e1df275e4e84aba4d6ed",
+          "label" : "truncated-tag",
+          "swift_valid" : false
+        },
+        {
+          "ciphertext_hex" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826608c32cf95e9213650ae4a61f2fb0c442fd94bab6b921f2ba3f68eae2935af4b85e985285f531a1cd86ed50367390d6e3bd74a789fdac391433885093baa01cfcbb78ea8a1fcadbfa64e0f744d28a12695e4004249055a9d5ba0293e630e79728e3c81f454aa6fa1f13d00dcda5f4971318cc603d26fddfae3a48e306e13c5cec0d87110c3e28280ea235a84c22a2ef1a0950a0c1ececf514559bd3fec3b73a1cdfbe117e6d5e0282b661819795d5ec3e12dbf7892e4b5451480127ab0dedcd7780698fa4ea550825edff5c4af914b73c5fa408b0bdbaf5e469eaf74fd176a825ccfdc62b465a47f1332dbd7fdb5237af550ddff55a48c45f4ea2ea0380f37b4194597d44f1e67d097d22b554a6a2461708282b21210c279137ca0c5c6048730b0da08dd48e4098c854db5893502a2880954f26353e1df275e4e84aba4d6edc1",
+          "label" : "wrong-recipient",
+          "recipient_private_key" : "a50f50a52ca0002e35169a73474faa8cd25cfde667654e1916c99594f0057d19",
+          "swift_valid" : false
+        }
+      ],
+      "plaintext_hex" : "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+      "recipient_keys" : {
+        "noise_private_key" : "7e8dea06a21baaf0dbfc7a216853f803bb49556359d45094fd2f01fed8e8d49c",
+        "noise_public_key" : "29b9e001c2d683fb7be5db839288fe26e8a1c56221b367ffa143bdce0765312b",
+        "nostr_private_key" : "5624207d076e3c94233c4c864426079e53a2bc25e03a480a448ebbd10769875d",
+        "nostr_public_key" : "4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723",
+        "signing_private_key" : "928211e0fcbc0945b472d362d59b8a71c916c981ee093e2d384a2ba5ccde3b69",
+        "signing_public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e"
+      },
+      "sender_keys" : {
+        "noise_private_key" : "3d15a9b6e29252efc4da6d38010a75582e2a20c46dff0c72ee9dd5100bd7e174",
+        "noise_public_key" : "699ad0d30193934f818b308a561458235a32d82c8c7cb00dbe40000f550aa600",
+        "nostr_private_key" : "43095fd76659f27444eb34c2ee8929d99c2c08e861e3b3f9a239f1537ab26783",
+        "nostr_public_key" : "ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6",
+        "signing_private_key" : "559492c086e0948271b138e4d6706882a640dec92cd3f84bd3004605ef814651",
+        "signing_public_key" : "87b87a9aee265ff11d0904d6b4e93f11568cafb5935c3b01449c301182b96ac2"
+      },
+      "service_ciphertext_hex" : "2d742a4c7564ea706463ac826dd018ae52ab941a7e8509d2a774586427c68f7f44d3903d7705ad071daf00a47fd1c19f5118b633dbfe08224c1d9b967a4e13ee342e6178e31ca242c2e3a552f826a839728f62a0bf0377e2d37895fecc3dc19237bde4bac51bb77a4e59c3cc0aa45785e67bce56eef067ba989a96dbd4bbfc8ab899b93392529a0221c69b81e74a3280639ad97992bb90cc1da6e5edd0008bca48864d6ec31dc05699b70f174b1c7c779796af0791d1c7a36ca7dfe9a8f8d1d408eecec7b6a40c3fec332839fafe25498fa2b7c32c4fe88f255c944da1d76cdd772aae4e1ad122dae10244f9e52333fe34354fcaa27a23b95df917bde80ffc442ed9a742f11680d785a0842afac01b04bc842537a221478eddbb9eefb3fc1526de14c51481a9642b3ab6d197752a481789ce3d82c03efeade7a7a59eedbede79077940ae3459ef0c4b719b82d1d2e1bcd518a6a5c66afdea23bec9f007b6f8ac",
+      "swift_sender_static_key" : "699ad0d30193934f818b308a561458235a32d82c8c7cb00dbe40000f550aa600"
+    }
+  ],
+  "description" : "Noise_X_25519_ChaChaPoly_SHA256, prologue bitchat-courier-v1. Fixed ephemeral key permits byte-for-byte writer checks; every ciphertext is opened by the actual Swift openCourierPayload.",
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift"
+}

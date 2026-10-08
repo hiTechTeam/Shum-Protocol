@@ -15,14 +15,14 @@
 | Обзор | [spec/00-overview.md](spec/00-overview.md) | черновик |
 | Ключи и личность | [spec/01-keys-identity.md](spec/01-keys-identity.md) | черновик, примеры есть |
 | Карточка контакта и приглашения | [spec/02-contact-card.md](spec/02-contact-card.md) | черновик, примеры есть |
-| Конверт сообщения | spec/03-envelope.md | не начат |
+| Конверт сообщения | [spec/03-envelope.md](spec/03-envelope.md) | черновик, примеры проверены Swift |
 | Виды пакетов | spec/04-packets.md | не начат |
 | Правила приёма и слияния | spec/05-rules.md | не начат |
 | Транспорт Bluetooth | spec/06-transport-bluetooth.md | не начат |
 | Транспорт Nostr | spec/07-transport-nostr.md | не начат |
 | API push-сервера | spec/08-push-api.md | не начат |
 | Хранилище на устройстве (SQLite) | spec/09-storage.md | не начат |
-| Тестовые примеры | [vectors/](vectors/) | для разделов 01 и 02 |
+| Тестовые примеры | [vectors/](vectors/) | для разделов 01–03 |
 
 ## Как читать
 
