@@ -1,0 +1,42 @@
+{
+  "cases" : [
+    {
+      "message_hex" : "",
+      "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
+      "signature" : "246a26e12afd0dd598f3e60c872a868b7ba78f8fba16300f654f29e16ee2ed354e5565924f2b43fede07337b3ffe907cecd85cca70e13fcc9cf790db158ae707",
+      "valid" : true
+    },
+    {
+      "message_hex" : "",
+      "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
+      "signature" : "256a26e12afd0dd598f3e60c872a868b7ba78f8fba16300f654f29e16ee2ed354e5565924f2b43fede07337b3ffe907cecd85cca70e13fcc9cf790db158ae707",
+      "valid" : false
+    },
+    {
+      "message_hex" : "7368756d",
+      "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
+      "signature" : "d61a82da67d29544daf0f80d1cd8360b656aaf1baced9eae8f845d9701528129571445023381b9f9fa9b10bcf40690c1092a5ddf2a7e20ee790962d3f5f66a08",
+      "valid" : true
+    },
+    {
+      "message_hex" : "7368756d",
+      "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
+      "signature" : "d71a82da67d29544daf0f80d1cd8360b656aaf1baced9eae8f845d9701528129571445023381b9f9fa9b10bcf40690c1092a5ddf2a7e20ee790962d3f5f66a08",
+      "valid" : false
+    },
+    {
+      "message_hex" : "d09fd180d0b8d0b2d0b5d1822c205368756d20e29895efb88f",
+      "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
+      "signature" : "8ad298b03d65027688f8e35f9b6b6d9c5f3f206a006bd06532f26e26ed829f42a95619554a725964c6436efcf82ac0219ef3e8097d22547d902323cddf267706",
+      "valid" : true
+    },
+    {
+      "message_hex" : "d09fd180d0b8d0b2d0b5d1822c205368756d20e29895efb88f",
+      "public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e",
+      "signature" : "8bd298b03d65027688f8e35f9b6b6d9c5f3f206a006bd06532f26e26ed829f42a95619554a725964c6436efcf82ac0219ef3e8097d22547d902323cddf267706",
+      "valid" : false
+    }
+  ],
+  "description" : "Ed25519 signatures made by CryptoKit (randomized). A client must accept the valid ones and reject the flipped ones.",
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift"
+}

@@ -1,0 +1,182 @@
+{
+  "cases" : [
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"OVuDx8ZVjnrNWtUUj5iyaE0i6TSH/5eSta60Z/qdBJuNtp7SBY6Iy6wWXYJEAuw7EGnwKu942ynwuiMwCM7CAg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"hq2bzD5Dp8D7XCsgsVSxSroO1RaDpt8Q9wUrzB+vdyIxuxVH4PPDH12HuFTfoUx3yA8bo9YjU89qIihMUgEOAg==\",\"signature\":\"XPKaDUBjH3lampM9tv6ZKQXG+aGgtCL7qzZDRzTXhUZmKeFHZJG2A5cOh7a6WYRYtJvJsoL5dsdMvB8HVAQaCw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "valid-full",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"7OUtjBTze5JDK5zpiNhflZQiQD7zRvmEQ4rz8qdqe+4hha+MBE94oC1+Dzwjhz9armPalD6uha9ajrIiqswACw==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"1bjvuVk6/irgOQuOr1f6ezMqt4eZtGsijXjSLUOUmZ/1TITn10qwQtCToIF5DIaEjf1MAizgAxdq9DhR5uX6Dw==\",\"signature\":\"n0JiR7U1n3k35+U0TRACPT0Ur99IrN/QMV117eynZAKDa9GZBtrs+IBCeyTOUgqKWf7FTdsOFytBlGZA+HGdBg==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":2}",
+      "label" : "version-2",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"Xx2P9ZNberfAdogIiucLP+sWkg8uIMilroa+6mh2lOLRVNmlFfI6GT/GRiqyj0WQuo1qksgZ0JihOxiG5yJbBQ==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"QPeBwN/HtcbXeASx9cYmiu7UZBHPu/x3cFlcnnNFdnpSekpt5TXWHzc2EvxJo1bviX1BS+mcKpBozPg9EJkACA==\",\"signature\":\"aQ12BkOApcNZT27cnDGu5M1yDFZ337YvRi2ZwlRMzWBtPpd+ZZ0UQeUAng9LxrAXhqqxx1hrjTmE1y8k2ojvCA==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "noise-key-zero",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"wMo6E2zLP+t50AuvR1lonLuCcMc+zhMBFu7fsuSUqMten68ekOXrgEtgLiBe8DUMKT7/oN6GAQhYx6Jq1RM8Bw==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"BwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBw==\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"WvaPzDGXvtK3+ineBdcP6MKPTsSX2XCQ0aCGcePBS+CcrhfN4GYU4kdDqfp439hjbLUisWwfCcsWoMobfUQBBQ==\",\"signature\":\"ONWTYyUeXVICPNm6UwaBQohuDogr1HnfIeozQ3xn6MpeVDccLRqSnuccxhE/DpRRiQ9+E9RI21Vgyp+xTHyBBw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "noise-key-31-bytes",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"GDkXv6qYhtym0xkk5KGW0soollink/xagaqj9BSdnysndnP4NXKoExtK/7ay+nxPeZyvPN8xchg50UlcO3KbBg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774F4FB078FA592C608C5C68F0ADA125C778D5268F1F27583E073B89ED2A723\",\"profileRevision\":1,\"profileSignature\":\"jt5wcfQd/cW1Afw/dQ+rlHg5LEYSNjI42OG3qcXPMY11E3gUZYrsOtr+ySniq9cvbu6CbavxoO4+fXuEnrmXCw==\",\"signature\":\"JV/196TUeTiwXvF8f40awOpVq+qb/TwSCrNY0gtYq/vEGogoXUyDpDEo6FVUN+C5BcGlo98WDXfwKhAwcmU7AA==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "nostr-key-uppercase",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"rzOnODPAIVQpx8IdTfELuicTn4TqgXpUgb1jUoiZzzqRLWu1z5bGYaA86wnlzoZHC2BMwQdi4OO0B7DomeIADg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a72\",\"profileRevision\":1,\"profileSignature\":\"6t4TOFGx5+ITlVNa/iGr9WKpBKwk0eUqMnY9/NUp9QdB99OIIoW9ZDcuo6SAqhhRyuH9wKfkYli4diX4RSGJBQ==\",\"signature\":\"5s76gUQuESbGVPJFeWUYNDoqFhuwGT/x/X7MpA+OO57ItVQBdRI3SUF6qWD7i9tHXvQXALQyrV7vUYHDzAeUAA==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "nostr-key-63-chars",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"ktEPFA8tvSva77P3FZm2xkN/meWwBkxYIHHbubbGgupzb8g0awODcHwK6UQfQi0MupIQJ+c9ZEyCJ/5HmzAuBg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a72ａ\",\"profileRevision\":1,\"profileSignature\":\"Nz/ZHFfx+RK80NEYUJKFTl1S/n8hR0w+yJH8NRygHU5m3Ocb6Xei/iJWdXjEymevi5oLQ2voMIxh+6o2XrAwCQ==\",\"signature\":\"wzZn/+nEynDAC0F8pu7ADeT42IosUH2nFiAd21D+sfcOzRPlO6Bhq4X7RvGQC4fsfgPuFePx6zbvVN38yL+WCw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "nostr-key-fullwidth-a",
+      "note" : "Fullwidth U+FF41 passes Character.isHexDigit in Swift. The spec requires ASCII [0-9a-f]; see 02 question 1.",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"WgNRyhXelxH9gQoQF9lzANDFoXQS/x++NpKga0NIbIKyDbwpVyTlUhcIvGqwg4gVRSxDgN+rKd8K4ydJ66v+Bw==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\" \\n\\t \",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"3vu3fw9D3AWZuKhlR6HgqVsMa9OaiLHn+gg+X1/JXTkdVjFjIlnwm9AYTveHVWeqDZJ8lFCNpLqjrlE89hAdDQ==\",\"signature\":\"kpS6cef9SekiN1lVQtb5/Aq6OrgH5dOFALbQPIbkyTW5Vf9amFJ959ew8KScK9RJMz+TLGVXuLpygvuNyONYBQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "name-whitespace-only",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"nwlJeANgM3RQR0gEaSdhe6ZyBX2m6ZvWF43VZ7z5ayEwGz+SP0HJeusl93Z/uEPxURR9aCwkLjwz4xZQfzXmAA==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\" 　\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"xXj2lkKZyuCV33uduRsAPVVQfQYqH3ZGFhUR4YhHIqt8RAAj3uNB14Dl819zYX7yiektpNFdGCJhhGWKxEilAA==\",\"signature\":\"eCbiUDnRZY9XZ2KAZTZZAvlju2IVX9ndaxEPAwv3iiGx7OXIUTqEsOVwK3dYZjceaXe/VnSCaXUwK+LzJvw5CA==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "name-nbsp-ideographic-space",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"xLDo+w4qmB1hK9761fJWDt95u7nCzAr+MSAsarYTjA88GI29CmTmQWpzYJCzK7EGU6lKF0qwth6U/jPWef+8BA==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"GeQ4fxpZX24hFwzbzo9bHPffnsTYAgw1138sykrdmJYesu+UQ00F0vdi0qULgZdXnYBkxJtXFepYcAumuEbEAQ==\",\"signature\":\"iiVEffHgq0dxClOb4Z9AyuSJGmq2fxy/xvx2p7LSueQBLmuW9rWYIfc+nGDbujPdKJacDtaLqEX6L1oSfDMyAw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "name-64-bytes",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"eMSQ18vcaxY/HwoN8IVMn8xxn7eAHSn5Z/6SZWzsfAqK+69WbL3t5gS1Gmm8wYvXK554CE+gE0Rfbb1vlzY9Bg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"OMSPv66swlo6c9PD+NCw7WNW8C4UHJqWMTjXmVMFIqERcWGZzgMujSNd5kNZq96B0+Qu4gfGNJ1TyNfWwSMEBg==\",\"signature\":\"Jzj1FjzBJbIPLWL6WIQ134TpPPC0Nkowf+4ThQ9OoCJYicvZEvYJ4m1RmnjfXOK8yTuyD7smjgNyA2nT2hOEBw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "name-65-bytes",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"wday4nl1xSygN4AzgV+hj6zvmdFLRtUZeNVhvgbgwwbXCAIh9x/zXI8kyry9CSk6vg431h/CoiPmd6RLbdd1Cg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"/0Ahg0qQMJ2Pu+4GuPxVTGrWhOcDFAnfLmE8TyVhOzgJ5+ThaAxU2oD5ihcL10rS5mW/X/+qIuY/8idvVHXGAw==\",\"signature\":\"mC3+pzH1/aWURqAg5WJ19cuIA0hU/4pidce7sNJwa8NA+Dg9YG0iF8Ee0vaY31keYqIjEmDccf74JfWDh247BA==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "name-32-cyrillic-64-bytes",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"5AAxeA0ZMbdqUQsCnM8/3h3KySorI3VuOPoqzRiuYCrn0kK1xPQvXMleSCD8rqc8GbAG+/n4eYoGTXFjnUYSDw==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"CSZQ7q3Mvdne+vpA1K3O/bOT+Kpv+HwnaaoM4I3j5Ws543U5eH4YMBClXz7mE5+gSgu2pa+Oa74eRE+jkZv1CQ==\",\"signature\":\"PDPu72HGxHnMLNz897fYcG1vlmmagLo3R+6vxG2Xw8smoKpnOA/H8YRcDBPlsIrXzj7oNLzLrVkkijg4GZ6/Dg==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "name-33-cyrillic-66-bytes",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"zuYoKf1phZR0r4DBDMNyBfQjxJwrxFy0alEJg75cNoMVNWdaSIZ1/G65BNDGNjXERQUKzPJLbUYsF/ji8s4EAA==\",\"avatarVersion\":1,\"bio\":\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"tohgc5yPPHMtIcyuEP18+7ntJ4hfkj/mEr8sClPrU8iEZz0tElJ+5WwstYYiHppMAQffQ2+QZFRCKtG0xob/DA==\",\"signature\":\"vSSFEDQ1aPWkAwIjXvNctje77UGO07rxF3HFHTZVTEBKtXQ+RENun4Pr/y1puISZu63lrEkfqnHGBW2uLVocCQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "bio-72-chars",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"qaizYKVd1kohHJBrkTgX4E8nu5IRQryM0VV5qgrfInkmnzYq8qaPlWDonVcJuTo2ZjqRWEm/lR7wglkncwUuCw==\",\"avatarVersion\":1,\"bio\":\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"9+KvTNNQA2CW9I1PQkNgiAGDYs/HaQSC+OnIYB/kpwc/LytLI65ss5iTqhjuxBM0RcsihM6DsXRxg3N/CF6+DA==\",\"signature\":\"eGz7vGshinT43K8RNWp/G7wsIFlXNy99rOrfLi3DBsWm/4FUPpLI6P9+DiOfjbgxHw17OOaDfHfPpF+Cp1DAAQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "bio-73-chars",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"SwYiHaqOm+Y+YTvhYZJYM4lBLL42jwyUHnSMkSo0somhsypoFmN8JDRz8U/KvPp4eYhUEUboVLv1QpE7qu/cDg==\",\"avatarVersion\":1,\"bio\":\"жжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжжж\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"ifoMBmLNTxsm/hd5jRQGit1OViWcSNTyg1vAXTIlzqyx2zWSDF51oMgSR2q9ai1MC7pWXp5dLD8Bgrm+5fadDw==\",\"signature\":\"dVzKPnx+O3bKwwe+m8blkDOAUjYsHoxdqvEdW0xSyY+Zs1aYaDv4HNUKQ1/74RIQQEj1P2G75Gh4f9yojlxUBw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "bio-72-cyrillic",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"hFA4fezltKyP8OwGE5hXuRb8m1E2Nivc6tXYeMg3iA8X7ps0VKsO/DFyOC64o/bJU1xz9veQbkg7P3YqBn7QCg==\",\"avatarVersion\":1,\"bio\":\"👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"0ebAM7nttXcum9ezYA5oWZhSpsqYeeq2mVACUlmJxOMDIYCBN7mhaCEFmE3H8TWQZN1KQyYuJP9DOP6VNg12CQ==\",\"signature\":\"yHlo+yVUA0kaAwmEOZ2mMuppVjSpJDufm5MY1BzW6aVOj3TY8PhqB5fTs4nVki6HaHtdzItTwoFRz2rpX2sCAw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "bio-72-emoji-576-bytes",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"LwzQvBB6I1Ob9b8WBEeq4hrwxJF5N886x8lPAeroJl/lIRwyCipF4aSgCfoVWMy3VQTiZcVwh2BR1gGVACSQAw==\",\"avatarVersion\":1,\"bio\":\"👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"g6I4jHCQHpxQahGXqfyH51EwSXz/j3o7GeT7Ti2ZUAPXtzteg1RG9WJDoPKH2Kz7+yHM74XHNN53oWRLM3WCAA==\",\"signature\":\"FKBUGB3gaXeyWnJsj3quXO1EOSdCcKlF01vbElN47dVPh4dM7Ot4IOsA7sV39tfw5NKxa0ktvPpgod5w1IRrDQ==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "bio-36-family-emoji-648-bytes",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"OVuDx8ZVjnrNWtUUj5iyaE0i6TSH/5eSta60Z/qdBJuNtp7SBY6Iy6wWXYJEAuw7EGnwKu942ynwuiMwCM7CAg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"h62bzD5Dp8D7XCsgsVSxSroO1RaDpt8Q9wUrzB+vdyIxuxVH4PPDH12HuFTfoUx3yA8bo9YjU89qIihMUgEOAg==\",\"signature\":\"XPKaDUBjH3lampM9tv6ZKQXG+aGgtCL7qzZDRzTXhUZmKeFHZJG2A5cOh7a6WYRYtJvJsoL5dsdMvB8HVAQaCw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "profile-signature-flipped",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"OVuDx8ZVjnrNWtUUj5iyaE0i6TSH/5eSta60Z/qdBJuNtp7SBY6Iy6wWXYJEAuw7EGnwKu942ynwuiMwCM7CAg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"hq2bzD5Dp8D7XCsgsVSxSroO1RaDpt8Q9wUrzB+vdyIxuxVH4PPDH12HuFTfoUx3yA8bo9YjU89qIihMUgEO\",\"signature\":\"XPKaDUBjH3lampM9tv6ZKQXG+aGgtCL7qzZDRzTXhUZmKeFHZJG2A5cOh7a6WYRYtJvJsoL5dsdMvB8HVAQaCw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "profile-signature-63-bytes",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"OVuDx8ZVjnrNWtUUj5iyaE0i6TSH/5eSta60Z/qdBJuNtp7SBY6Iy6wWXYJEAuw7EGnwKu942ynwuiMwCM7CAg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"hq2bzD5Dp8D7XCsgsVSxSroO1RaDpt8Q9wUrzB+vdyIxuxVH4PPDH12HuFTfoUx3yA8bo9YjU89qIihMUgEOAg==\",\"signature\":\"\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "profile-without-card-signature",
+      "note" : "Shape of a card decoded from a c4 invitation.",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"hq2bzD5Dp8D7XCsgsVSxSroO1RaDpt8Q9wUrzB+vdyIxuxVH4PPDH12HuFTfoUx3yA8bo9YjU89qIihMUgEOAg==\",\"signature\":\"\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "profile-only-signature",
+      "note" : "Exact shape of a card decoded from a c4 invitation.",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"OVuDx8ZVjnrNWtUUj5iyaE0i6TSH/5eSta60Z/qdBJuNtp7SBY6Iy6wWXYJEAuw7EGnwKu942ynwuiMwCM7CAg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"hq2bzD5Dp8D7XCsgsVSxSroO1RaDpt8Q9wUrzB+vdyIxuxVH4PPDH12HuFTfoUx3yA8bo9YjU89qIihMUgEOAg==\",\"signature\":\"XfKaDUBjH3lampM9tv6ZKQXG+aGgtCL7qzZDRzTXhUZmKeFHZJG2A5cOh7a6WYRYtJvJsoL5dsdMvB8HVAQaCw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "profile-card-signature-flipped",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"OFuDx8ZVjnrNWtUUj5iyaE0i6TSH/5eSta60Z/qdBJuNtp7SBY6Iy6wWXYJEAuw7EGnwKu942ynwuiMwCM7CAg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"hq2bzD5Dp8D7XCsgsVSxSroO1RaDpt8Q9wUrzB+vdyIxuxVH4PPDH12HuFTfoUx3yA8bo9YjU89qIihMUgEOAg==\",\"signature\":\"XPKaDUBjH3lampM9tv6ZKQXG+aGgtCL7qzZDRzTXhUZmKeFHZJG2A5cOh7a6WYRYtJvJsoL5dsdMvB8HVAQaCw==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "profile-seed-signature-flipped",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"v6Z+GXqXFz0SCXstMUbfd0OjYt8G0wiBl62iyLx9P7F1H61vBG64tBJWdsPAQRnk4mt3Xy3gmydN6HYuYTdTCA==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":0,\"profileSignature\":\"Q11QcwiM8Vk9EFP6yzlw3QIbziE3u5ggU4SzbHAfp6xclH6nH8mp9Kd/rtDpqRzdDVupIt11ggr9arNfebLhAg==\",\"signature\":\"J1miLH0z4Rg+lFiYllZtvrKTeBGb/iSu6UXJ81K7SEEW2WOUCW57nsbvc+tsGrDsyX9T6OQLBM4J18OH1PrMDA==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "profile-revision-zero",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":2359173024398982453,\"avatarSeedSignature\":\"OVuDx8ZVjnrNWtUUj5iyaE0i6TSH/5eSta60Z/qdBJuNtp7SBY6Iy6wWXYJEAuw7EGnwKu942ynwuiMwCM7CAg==\",\"avatarVersion\":2,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"1UrhtREGv8Okx9zfoTl2cAVxUpWgycnfIBhE1XlG7V/BsO3wmqTLG47jP2NMdQU0KMICIN6b8KRxsu9EMoi7CQ==\",\"signature\":\"0D8nzGEs8KZNdm5GFxnlJ+M4rviBaQczKbdKxOvH/OA/ikjWClv7a11V/ZJ2Qakhdc5svZnil63zWUOZxPEvCg==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "profile-avatar-version-2",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeedSignature\":\"OVuDx8ZVjnrNWtUUj5iyaE0i6TSH/5eSta60Z/qdBJuNtp7SBY6Iy6wWXYJEAuw7EGnwKu942ynwuiMwCM7CAg==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileRevision\":1,\"profileSignature\":\"KfWIs1pYsJdw/PfwwuaPw7fIC5W/31NgkmcPEz4Chs4ThDwK9LJvfNKQMLXj/vEqqqt2+dxpYBYdJg2/OzsvBA==\",\"signature\":\"sUUHjnXpzR9dTLBkRZ1UGhyu1Fr3lDfaPaKF2A4RZ/wiEx6fAvMMCYnPTzJEnB78JLDZMa0U2Y8pH75hCkSiDA==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "profile-without-seed",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"signature\":\"0DfqBguiyYofwvoWqhJWztxFbC8ZAI6DSyXR9VhLZQ7GWzMf6Ok0jkiSfNqW55c27B2GG1ISjX0Auf1GtL7yBg==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "legacy-valid",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"signature\":\"\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "legacy-empty-signature",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":42,\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"signature\":\"0DfqBguiyYofwvoWqhJWztxFbC8ZAI6DSyXR9VhLZQ7GWzMf6Ok0jkiSfNqW55c27B2GG1ISjX0Auf1GtL7yBg==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "legacy-seed-without-seed-signature",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"avatarSeed\":42,\"avatarSeedSignature\":\"ICZ3WSc1cK6gERAI/tGNXbOIaSiZl8InN2Cz3HwHfAz1rj3D6k+7Pa+JaEWtXFb6RjJ4IGqOgQDGj3Uz3tihDQ==\",\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"signature\":\"0DfqBguiyYofwvoWqhJWztxFbC8ZAI6DSyXR9VhLZQ7GWzMf6Ok0jkiSfNqW55c27B2GG1ISjX0Auf1GtL7yBg==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "legacy-seed-with-seed-signature",
+      "swift_valid" : true
+    },
+    {
+      "card_json" : "{\"avatarVersion\":1,\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"signature\":\"0DfqBguiyYofwvoWqhJWztxFbC8ZAI6DSyXR9VhLZQ7GWzMf6Ok0jkiSfNqW55c27B2GG1ISjX0Auf1GtL7yBg==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "legacy-version-without-seed",
+      "swift_valid" : false
+    },
+    {
+      "card_json" : "{\"bio\":\"Барба это жызн!\",\"name\":\"Игорь Загоев\",\"noiseKey\":\"KbngAcLWg/t75duDkoj+JuihxWIhs2f/oUO9zgdlMSs=\",\"nostrKey\":\"4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723\",\"profileSignature\":\"hq2bzD5Dp8D7XCsgsVSxSroO1RaDpt8Q9wUrzB+vdyIxuxVH4PPDH12HuFTfoUx3yA8bo9YjU89qIihMUgEOAg==\",\"signature\":\"0DfqBguiyYofwvoWqhJWztxFbC8ZAI6DSyXR9VhLZQ7GWzMf6Ok0jkiSfNqW55c27B2GG1ISjX0Auf1GtL7yBg==\",\"signingKey\":\"FdTzMNDf68ux/xX0/mqONFLKgK70/DVzo9QXNGtWS44=\",\"version\":1}",
+      "label" : "legacy-profile-signature-without-revision",
+      "swift_valid" : false
+    }
+  ],
+  "description" : "Cards and whether Swift ShumContactCard.validate() accepts them. Mutated cards are re-signed so that only the named rule is broken.",
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift",
+  "keys" : {
+    "noise_private_key" : "7e8dea06a21baaf0dbfc7a216853f803bb49556359d45094fd2f01fed8e8d49c",
+    "noise_public_key" : "29b9e001c2d683fb7be5db839288fe26e8a1c56221b367ffa143bdce0765312b",
+    "nostr_private_key" : "5624207d076e3c94233c4c864426079e53a2bc25e03a480a448ebbd10769875d",
+    "nostr_public_key" : "4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723",
+    "signing_private_key" : "928211e0fcbc0945b472d362d59b8a71c916c981ee093e2d384a2ba5ccde3b69",
+    "signing_public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e"
+  }
+}

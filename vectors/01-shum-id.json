@@ -1,0 +1,54 @@
+{
+  "cases" : [
+    {
+      "bluetooth_peer_id" : "29b9e001c2d683fb7be5db839288fe26e8a1c56221b367ffa143bdce0765312b",
+      "keys" : {
+        "noise_private_key" : "7e8dea06a21baaf0dbfc7a216853f803bb49556359d45094fd2f01fed8e8d49c",
+        "noise_public_key" : "29b9e001c2d683fb7be5db839288fe26e8a1c56221b367ffa143bdce0765312b",
+        "nostr_private_key" : "5624207d076e3c94233c4c864426079e53a2bc25e03a480a448ebbd10769875d",
+        "nostr_public_key" : "4774f4fb078fa592c608c5c68f0ada125c778d5268f1f27583e073b89ed2a723",
+        "signing_private_key" : "928211e0fcbc0945b472d362d59b8a71c916c981ee093e2d384a2ba5ccde3b69",
+        "signing_public_key" : "15d4f330d0dfebcbb1ff15f4fe6a8e3452ca80aef4fc3573a3d417346b564b8e"
+      },
+      "shum_id" : "f88accf91bfa9c941eee68411bc07bb66c29a0707e231c43e9c1df7a2e57a60b"
+    },
+    {
+      "bluetooth_peer_id" : "699ad0d30193934f818b308a561458235a32d82c8c7cb00dbe40000f550aa600",
+      "keys" : {
+        "noise_private_key" : "3d15a9b6e29252efc4da6d38010a75582e2a20c46dff0c72ee9dd5100bd7e174",
+        "noise_public_key" : "699ad0d30193934f818b308a561458235a32d82c8c7cb00dbe40000f550aa600",
+        "nostr_private_key" : "43095fd76659f27444eb34c2ee8929d99c2c08e861e3b3f9a239f1537ab26783",
+        "nostr_public_key" : "ff5f7e64e38263265eecce84a6205f23b4cc5ef80a93762d8d7a7b3fdf6449a6",
+        "signing_private_key" : "559492c086e0948271b138e4d6706882a640dec92cd3f84bd3004605ef814651",
+        "signing_public_key" : "87b87a9aee265ff11d0904d6b4e93f11568cafb5935c3b01449c301182b96ac2"
+      },
+      "shum_id" : "b7478f782a1ededf952662c7544766d69c44bc8e3160d6d05e329f9e27f8b612"
+    },
+    {
+      "bluetooth_peer_id" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826",
+      "keys" : {
+        "noise_private_key" : "a50f50a52ca0002e35169a73474faa8cd25cfde667654e1916c99594f0057d19",
+        "noise_public_key" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826",
+        "nostr_private_key" : "99296b556ddc433c4c338f0b6c478796998efd2b35555f04abcf6b92c6f1cfa8",
+        "nostr_public_key" : "0d020ab7abae8e108b8fc6774f880d99c069b78cd018833699379c0d7ba236ae",
+        "signing_private_key" : "45f9c14c01900f7460066ac9604cf53d9523320503b4f69e527d1f1e99cefaed",
+        "signing_public_key" : "7cae591c1489664ead6ac813b6e683697c293ed62b10d8ca1b32a649c71d31ba"
+      },
+      "shum_id" : "200000955ef9630971d94da956373aad4815a9b825838af721b4c13112487787"
+    },
+    {
+      "bluetooth_peer_id" : "2172a8118f4137202bcc3f75e06dedcd6d8df5d2ed34ad0d4ee01935ae50d273",
+      "keys" : {
+        "noise_private_key" : "fa3e484dbdeb45f00f6e5c6c938c441d08686443440e4971c1464d8f67f155b9",
+        "noise_public_key" : "2172a8118f4137202bcc3f75e06dedcd6d8df5d2ed34ad0d4ee01935ae50d273",
+        "nostr_private_key" : "1a403d4a4d3551f8d4358c3d2ee1a4d11fabc9c542456f75d67b90edf2b96aa6",
+        "nostr_public_key" : "4ee8df81198e99dd98a8bbb359624548b7f35e55f7db0453d0c666adf89956d1",
+        "signing_private_key" : "2c7c8b4d4ceeb57df61365a78cfb8b487818474b87cf5805f5ad16d0d266ed57",
+        "signing_public_key" : "f2f88350cd44cdad6831c1581b6bbbdcf03a49e243adc636d98c2ea3a569f813"
+      },
+      "shum_id" : "692378b4974d00afd2feaa244a615be8aa8159219eb40a2b716930ea87ed64ee"
+    }
+  ],
+  "description" : "shum_id = hex(SHA-256(noise_public_key)); bluetooth_peer_id = hex(noise_public_key)",
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift"
+}

@@ -1,0 +1,30 @@
+{
+  "cases" : [
+    {
+      "avatar_seed" : "2359173024398982453",
+      "avatar_seed_hex_le" : "353dfcc25d77bd20",
+      "avatar_version" : 1,
+      "noise_public_key" : "29b9e001c2d683fb7be5db839288fe26e8a1c56221b367ffa143bdce0765312b"
+    },
+    {
+      "avatar_seed" : "6693471581113549061",
+      "avatar_seed_hex_le" : "05017282f0fce35c",
+      "avatar_version" : 1,
+      "noise_public_key" : "699ad0d30193934f818b308a561458235a32d82c8c7cb00dbe40000f550aa600"
+    },
+    {
+      "avatar_seed" : "17431044755369634332",
+      "avatar_seed_hex_le" : "1c2abef3d982e7f1",
+      "avatar_version" : 1,
+      "noise_public_key" : "9f6f226c4403d131d42bf821664124196f8d5dfd1496a65d6a3109dcddbb6826"
+    },
+    {
+      "avatar_seed" : "14939006145874735309",
+      "avatar_seed_hex_le" : "cdb03d7ef00252cf",
+      "avatar_version" : 1,
+      "noise_public_key" : "2172a8118f4137202bcc3f75e06dedcd6d8df5d2ed34ad0d4ee01935ae50d273"
+    }
+  ],
+  "description" : "seed = UInt64 little-endian of SHA-256(\"shum.pixel-avatar.v1\\0\" || noise_public_key)[0..8]",
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift"
+}
