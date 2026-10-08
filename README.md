@@ -20,9 +20,9 @@
 | Правила приёма и слияния | [spec/05-rules.md](spec/05-rules.md) | черновик, примеры проверены Swift |
 | Транспорт Bluetooth | [spec/06-transport-bluetooth.md](spec/06-transport-bluetooth.md) | черновик, примеры проверены Swift |
 | Транспорт Nostr | [spec/07-transport-nostr.md](spec/07-transport-nostr.md) | черновик, примеры проверены Swift |
-| API push-сервера | spec/08-push-api.md | не начат |
+| API push-сервера | [spec/08-push-api.md](spec/08-push-api.md) | черновик, примеры проверены Swift |
 | Хранилище на устройстве (SQLite) | spec/09-storage.md | не начат |
-| Тестовые примеры | [vectors/](vectors/) | для разделов 01–07 |
+| Тестовые примеры | [vectors/](vectors/) | для разделов 01–08 |
 
 ## Как читать
 
