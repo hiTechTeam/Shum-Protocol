@@ -218,6 +218,15 @@ relay, receipt, encounter, словари, profileOutbox и метаданные
 Отрицательные проверки: неверный ключ/owner, подмена position, удаление
 контактов без обновления counts, повреждение ciphertext. No-op commit проверен.
 
+`09-rust-roundtrip.json` создан Rust из исходной Swift базы: изменены
+stored text, порядок контактов, добавлены дробные Date и tombstone. Настоящий
+Swift reader на разрешённом симуляторе проверяет всю базу и portable snapshot
+в `rustSQLiteRoundTrip()`. Это проверка хранения; изменённый stored text
+не является новым подписанным wire message.
+`09-legacy-cipher.json` снят с CryptoKit AES-256-GCM с отдельным legacy key
+и фиксированным nonce. Проверяет слой шифрования, а не Codable schema
+исторического архива Bitchat.
+
 1. Формат не имеет схемы версии для отдельных JSON payload. Добавления
    Rust должны сохранять неизвестные поля и optional значения при round-trip.
 2. Количество/размеры и корзины открыты. Это ожидаемое ограничение формата,

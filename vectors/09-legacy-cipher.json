@@ -1,0 +1,7 @@
+{
+  "combined_hex" : "202122232425262728292a2be96b87fb3a26182b0a7918245c7e79eaf17b20e44753f1d805c07084ccd65a843a6e45b828b4ad89bb2aad7cd64ee793f612fb56e584c10ba800597588b350b23dc38f0309ab",
+  "description" : "CryptoKit AES-256-GCM combined layer with separate legacy key. Payload is a cipher test, not a historical Bitchat archive fixture.",
+  "generator" : "Shum-iOS ShumTests/Protocol/ShumProtocolVectorTests.swift",
+  "legacy_key_hex" : "fffefdfcfbfaf9f8f7f6f5f4f3f2f1f0efeeedecebeae9e8e7e6e5e4e3e2e1e0",
+  "plaintext_hex" : "7b226d65737361676573223a5b5d2c2263727970746f54657374223a22d090d180d185d0b8d0b220537769667420e29895efb88f227d"
+}
