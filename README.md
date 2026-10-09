@@ -8,25 +8,25 @@ Protocol specification and compatibility test vectors for Shum. Identities use k
 
 The protocol has not reached a stable release. Sections 01–09 document the current v1 draft used by iOS and the Rust core. Multiple devices, sync and profile relays are planned for v1 stable; their wire formats still need work.
 
-The specification is currently in Russian. This README is available in both languages.
+All specification sections are available in English and Russian, in `spec/en/` and `spec/ru/`. Literal UTF-8 strings in data examples are preserved across translations.
 
 ## Specification
 
 | Topic | Document |
 | :--- | :--- |
-| Overview | [00](spec/00-overview.md) |
-| Keys and identity | [01](spec/01-keys-identity.md) |
-| Contact cards and invitations | [02](spec/02-contact-card.md) |
-| Message envelopes | [03](spec/03-envelope.md) |
-| Packet types | [04](spec/04-packets.md) |
-| Receive and merge rules | [05](spec/05-rules.md) |
-| Bluetooth | [06](spec/06-transport-bluetooth.md) |
-| Nostr | [07](spec/07-transport-nostr.md) |
-| Push API | [08](spec/08-push-api.md) |
-| Local storage | [09](spec/09-storage.md) |
-| Devices, planned | [10](spec/10-devices.md) |
-| Profile relays, planned | [11](spec/11-relays.md) |
-| v1 stable scope and open decisions | [12](spec/12-v1-stable.md) |
+| Overview | [00](spec/en/00-overview.md) |
+| Keys and identity | [01](spec/en/01-keys-identity.md) |
+| Contact cards and invitations | [02](spec/en/02-contact-card.md) |
+| Message envelopes | [03](spec/en/03-envelope.md) |
+| Packet types | [04](spec/en/04-packets.md) |
+| Receive and merge rules | [05](spec/en/05-rules.md) |
+| Bluetooth | [06](spec/en/06-transport-bluetooth.md) |
+| Nostr | [07](spec/en/07-transport-nostr.md) |
+| Push API | [08](spec/en/08-push-api.md) |
+| Local storage | [09](spec/en/09-storage.md) |
+| Devices, planned | [10](spec/en/10-devices.md) |
+| Profile relays, planned | [11](spec/en/11-relays.md) |
+| v1 stable scope and open decisions | [12](spec/en/12-v1-stable.md) |
 
 “Must” and “must not” define compatibility requirements. Descriptions of current iOS behavior record what the code does. Proposed changes and unresolved questions are listed in the specification; they are not implemented features.
 
