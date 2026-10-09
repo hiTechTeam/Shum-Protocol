@@ -19,15 +19,15 @@ Draft compatibility is not required; formats may change before release. Draft pr
 
 | Part | Section | Status |
 | :--- | :--- | :--- |
-| Keys/identity | 01 | Draft with vectors |
-| Card/invitations | 02 | Draft; corrections in subsection 4 |
-| Envelope/packets/rules | 03–05 | Draft; corrections in subsection 4 |
-| Bluetooth/Nostr/push | 06–08 | Draft; corrections in subsection 4 |
-| Local storage | 09 | Draft |
-| Multiple devices | 10 | Decisions agreed, formats needed |
-| Profile relays/networks | 11 | Decisions agreed, formats needed |
-| Profile isolation | 12, subsection 6 | Needs specification |
-| Extension rules | 12, subsection 5 | Needs specification |
+| Keys/identity | [01](01-keys-identity.md) | Draft with vectors |
+| Card/invitations | [02](02-contact-card.md) | Draft; corrections in subsection 4 |
+| Envelope/packets/rules | [03](03-envelope.md), [04](04-packets.md), [05](05-rules.md) | Draft; corrections in subsection 4 |
+| Bluetooth/Nostr/push | [06](06-transport-bluetooth.md), [07](07-transport-nostr.md), [08](08-push-api.md) | Draft; corrections in subsection 4 |
+| Local storage | [09](09-storage.md) | Draft |
+| Multiple devices | [10](10-devices.md) | Decisions agreed, formats needed |
+| Profile relays/networks | [11](11-relays.md) | Decisions agreed, formats needed |
+| Profile isolation | [12, subsection 6](#6-profile-isolation) | Needs specification |
+| Extension rules | [12, subsection 5](#5-extension-rules) | Needs specification |
 
 ## 3. One implementation
 
@@ -49,16 +49,16 @@ The draft deferred these matters to a future protocol version. Resolve them befo
 
 | # | Issue | Reference | Proposal |
 | ---: | :--- | :--- | :--- |
-| 1 | Card signature lacks domain label | 02, question 6 | Add one like other signatures |
-| 2 | Signed bytes depend on Apple's JSONEncoder | 02, question 2 | Specify an independent canonical format |
-| 3 | Bio grapheme count depends on Unicode version | 02, question 3 | Count scalars or bytes |
-| 4 | Private v2: encryption resembles NIP-44 | 07, question 1 | Adopt standard NIP-44 |
-| 5 | Swift replay-window bug | 06, question 3 | Fix; core migration removes the Swift defect |
-| 6 | Courier lacks forward secrecy; no key rotation | 03 question 1; 01 question 3 | Decide whether ratchet belongs in v1 stable or a later version |
-| 7 | Unsigned forwarding counter | 03, question 2 | Decide whether signing is needed |
-| 8 | Several invitation formats, c2/c3/c4/contact | 02 | Create only c4/HTTPS, read the rest |
-| 9 | Clear on all devices | 04; 05 question 5 | Included in section 10 |
-| 10 | Different safety codes across clients | 02, question 7 | One shared pair-code algorithm |
+| 1 | Card signature lacks domain label | [02](02-contact-card.md), question 6 | Add one like other signatures |
+| 2 | Signed bytes depend on Apple's JSONEncoder | [02](02-contact-card.md), question 2 | Specify an independent canonical format |
+| 3 | Bio grapheme count depends on Unicode version | [02](02-contact-card.md), question 3 | Count scalars or bytes |
+| 4 | Private v2: encryption resembles NIP-44 | [07](07-transport-nostr.md), question 1 | Adopt standard NIP-44 |
+| 5 | Swift replay-window bug | [06](06-transport-bluetooth.md), question 3 | Fix; core migration removes the Swift defect |
+| 6 | Courier lacks forward secrecy; no key rotation | [03](03-envelope.md) question 1; [01](01-keys-identity.md) question 3 | Decide whether ratchet belongs in v1 stable or a later version |
+| 7 | Unsigned forwarding counter | [03](03-envelope.md), question 2 | Decide whether signing is needed |
+| 8 | Several invitation formats, c2/c3/c4/contact | [02](02-contact-card.md) | Create only c4/HTTPS, read the rest |
+| 9 | Clear on all devices | [04](04-packets.md); [05](05-rules.md) question 5 | Included in section 10 |
+| 10 | Different safety codes across clients | [02](02-contact-card.md), question 7 | One shared pair-code algorithm |
 
 ## 5. Extension rules
 
