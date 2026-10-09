@@ -1,69 +1,40 @@
 # Shum Protocol
 
-Спецификация протокола мессенджера Shum и тестовые примеры к ней.
+English · [Русский](README.ru.md)
 
-Shum это мессенджер без номера телефона и без центрального сервера переписки.
-Личность человека это ключи, созданные на его устройстве. Люди добавляют друг
-друга по QR-коду, ссылке или по Bluetooth рядом и переписываются конвертами,
-зашифрованными для получателя. Доставка идёт по Bluetooth без интернета или
-через релеи Nostr.
+Protocol specification and compatibility test vectors for Shum. Identities use keys created on the device; encrypted messages travel over Bluetooth or Nostr relays.
 
-## Состояние
+## Status
 
-Протокол ещё не выпущен.
+The protocol has not reached a stable release. Sections 01–09 document the current v1 draft used by iOS and the Rust core. Multiple devices, sync and profile relays are planned for v1 stable; their wire formats still need work.
 
-- **Черновик v1** (разделы 01–09): протокол, как он работает в iOS-приложении
-  сейчас. Описание снято с кода и подтверждено тестовыми примерами.
-- **v1 stable**: первая стабильная версия, на которую дальше нанизываются новые
-  версии. Все клиенты понимают друг друга, один профиль синхронизирован на всех
-  своих устройствах. Состав, исправления черновика, открытые решения и
-  проверка готовности: [раздел 12](spec/12-v1-stable.md).
+The specification is currently in Russian. This README is available in both languages.
 
-## Разделы
+## Specification
 
-| Раздел | Файл | Состояние |
-|---|---|---|
-| Обзор | [00-overview.md](spec/00-overview.md) | черновик v1 |
-| Ключи и личность | [01-keys-identity.md](spec/01-keys-identity.md) | черновик v1, есть примеры |
-| Карточка контакта и приглашения | [02-contact-card.md](spec/02-contact-card.md) | черновик v1, есть примеры |
-| Конверт сообщения | [03-envelope.md](spec/03-envelope.md) | черновик v1, примеры проверены Swift |
-| Виды пакетов | [04-packets.md](spec/04-packets.md) | черновик v1, примеры проверены Swift |
-| Правила приёма и слияния | [05-rules.md](spec/05-rules.md) | черновик v1, примеры проверены Swift |
-| Транспорт Bluetooth | [06-transport-bluetooth.md](spec/06-transport-bluetooth.md) | черновик v1, примеры проверены Swift |
-| Транспорт Nostr | [07-transport-nostr.md](spec/07-transport-nostr.md) | черновик v1, примеры проверены Swift |
-| API push-сервера | [08-push-api.md](spec/08-push-api.md) | черновик v1, примеры проверены Swift |
-| Хранилище на устройстве (SQLite) | [09-storage.md](spec/09-storage.md) | черновик v1, примеры проверены Swift |
-| Несколько устройств | [10-devices.md](spec/10-devices.md) | часть v1 stable, решения согласованы, нужны форматы |
-| Релеи профиля и сети релеев | [11-relays.md](spec/11-relays.md) | часть v1 stable, решения согласованы, нужны форматы |
-| Первая стабильная версия | [12-v1-stable.md](spec/12-v1-stable.md) | состав, исправления, открытые решения, готовность |
-| Тестовые примеры | [vectors/](vectors/) | для разделов 01–09 |
+| Topic | Document |
+| :--- | :--- |
+| Overview | [00](spec/00-overview.md) |
+| Keys and identity | [01](spec/01-keys-identity.md) |
+| Contact cards and invitations | [02](spec/02-contact-card.md) |
+| Message envelopes | [03](spec/03-envelope.md) |
+| Packet types | [04](spec/04-packets.md) |
+| Receive and merge rules | [05](spec/05-rules.md) |
+| Bluetooth | [06](spec/06-transport-bluetooth.md) |
+| Nostr | [07](spec/07-transport-nostr.md) |
+| Push API | [08](spec/08-push-api.md) |
+| Local storage | [09](spec/09-storage.md) |
+| Devices, planned | [10](spec/10-devices.md) |
+| Profile relays, planned | [11](spec/11-relays.md) |
+| v1 stable scope and open decisions | [12](spec/12-v1-stable.md) |
 
-## Как читать
+“Must” and “must not” define compatibility requirements. Descriptions of current iOS behavior record what the code does. Proposed changes and unresolved questions are listed in the specification; they are not implemented features.
 
-- **Должен / нельзя** означают обязательные требования к совместимому клиенту.
-- **Сейчас в iOS** описывает фактическое поведение текущего кода, даже если оно
-  выглядит странно. До выпуска v1 stable его можно менять: список исправлений
-  в [разделе 12](spec/12-v1-stable.md), пункт 4. Где разделы 01–09 откладывают
-  что-то «до v2» или «до новой версии», это теперь решается до v1 stable.
-- **Вопрос** отмечает место, где код неоднозначен или требует решения. Такие
-  места собраны в конце каждого раздела.
-- Ссылки на код даны в виде `Файл.swift` и имени типа или функции в
-  репозитории [Shum-iOS](https://github.com/hiTechTeam/Shum-iOS).
+## Test vectors
 
-## Тестовые примеры
+[JSON vectors](vectors/) contain Swift inputs and expected results. For randomized encryption or signatures, clients verify or decrypt the recorded output. [Shum Core](https://github.com/hiTechTeam/Shum-Core) pins a revision of this repository and checks compatibility against these vectors.
 
-В папке `vectors/` лежат JSON-файлы, снятые с работающего Swift-кода:
-фиксированные входные данные и ожидаемый результат. Совместимый клиент должен
-проходить их все. Именно по ним проверяется ядро на Rust.
-
-Подписи Ed25519 в CryptoKit и шифрование со случайными одноразовыми числами
-дают разные байты при каждом запуске. Для них пример устроен как «вот подпись
-или шифротекст из Swift, клиент должен их проверить или расшифровать», а не
-«должно получиться ровно это».
-
-Генератор: `Shum-iOS/ShumTests/Protocol/ShumProtocolVectorTests.swift`.
-Последняя полная проверка: **21 тест в одной suite, passed**, iOS `5b8efc8`,
-симулятор iPhone 17 Pro. Запуск из `Shum-iOS`:
+The generator is `ShumTests/Protocol/ShumProtocolVectorTests.swift` in [Shum iOS](https://github.com/hiTechTeam/Shum-iOS). Last full check: 21 tests passed at iOS revision `5b8efc8`. Regenerating vectors changes random signatures and nonces.
 
 ```sh
 xcodebuild test -project ShumiOS.xcodeproj -scheme Shum \
@@ -73,34 +44,12 @@ xcodebuild test -project ShumiOS.xcodeproj -scheme Shum \
   -disableAutomaticPackageResolution -skipPackageUpdates
 ```
 
-Повторный запуск перезаписывает случайные подписи и nonce в примерах.
-Ошибки аутентификации в логе отрицательных тестов ожидаемы.
+Run from Shum-iOS. Bluetooth mesh and Noise originate from [Bitchat](https://github.com/permissionlesstech/bitchat); revisions and licenses are recorded in the iOS repository.
 
-## Источники
+## Related projects
 
-- `Shum-iOS/ShumiOS/Vendor/Messaging/`: карточка, конверт, логика доставки.
-- `Shum-iOS/ShumiOS/Vendor/Bluetooth/`: Bluetooth-сетка и Noise-сессии, взяты из
-  проекта [Bitchat](https://github.com/permissionlesstech/bitchat) (Unlicense),
-  ревизия указана в `Shum-iOS/Upstreams/versions.json`.
-- `Shum-iOS/ShumiOS/Vendor/Nostr/`: личность и события Nostr.
-- `Shum-iOS/ShumiOS/Vendor/Messaging/ShumSQLitePersistence.swift`: формат базы
-  на устройстве. Раздел 09 не про сеть: он нужен, чтобы ядро открыло базу,
-  созданную Swift, без переноса данных.
+[Shum Core](https://github.com/hiTechTeam/Shum-Core) · [Shum CLI](https://github.com/hiTechTeam/Shum-CLI) · [Shum iOS](https://github.com/hiTechTeam/Shum-iOS) · [Issues](https://github.com/hiTechTeam/Shum-Protocol/issues)
 
-## Связанные репозитории
-
-| Репозиторий | Что в нём |
-|---|---|
-| [Shum-iOS](https://github.com/hiTechTeam/Shum-iOS) | приложение для iPhone, источник черновика v1 и генератор примеров |
-| [Shum-Core](https://github.com/hiTechTeam/Shum-Core) | ядро на Rust: протокол, транспорты, хранилище; закрепляет ревизию этого репозитория |
-| [Shum-CLI](https://github.com/hiTechTeam/Shum-CLI) | клиент для терминала на ядре |
-
-## Вопросы и предложения
-
-Открытые вопросы записаны в конце каждого раздела. Расхождения между
-спецификацией и кодом, ошибки и предложения присылайте через Issues этого
-репозитория.
-
-## Лицензия
+## License
 
 [MIT](LICENSE), copyright 2026 hiTechTeam.
