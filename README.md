@@ -100,3 +100,7 @@ xcodebuild test -project ShumiOS.xcodeproj -scheme Shum \
 Открытые вопросы записаны в конце каждого раздела. Расхождения между
 спецификацией и кодом, ошибки и предложения присылайте через Issues этого
 репозитория.
+
+## Лицензия
+
+[MIT](LICENSE), copyright 2026 hiTechTeam.
