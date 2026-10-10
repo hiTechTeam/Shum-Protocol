@@ -2,7 +2,7 @@
 
 English · [Русский](../ru/README.md)
 
-Sections 00–09 describe the current v1 draft. Sections 10–12 describe the planned first stable version.
+Sections 00–09 describe the current v1 draft. Sections 10–13 describe the planned first stable version.
 
 - [00. Overview](00-overview.md)
 - [01. Keys and Identity](01-keys-identity.md)
@@ -17,5 +17,6 @@ Sections 00–09 describe the current v1 draft. Sections 10–12 describe the pl
 - [10. Multiple Devices](10-devices.md)
 - [11. Profile Relays and Relay Networks](11-relays.md)
 - [12. First Stable Version, v1 Stable](12-v1-stable.md)
+- [13. Profile Backup](13-backup.md)
 
 [Project README](../../README.md) · [Test vectors](../../vectors/)

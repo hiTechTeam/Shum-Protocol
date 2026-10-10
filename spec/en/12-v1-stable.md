@@ -26,6 +26,7 @@ Draft compatibility is not required; formats may change before release. Draft pr
 | Local storage | [09](09-storage.md) | Draft |
 | Multiple devices | [10](10-devices.md) | Decisions agreed, formats needed |
 | Profile relays/networks | [11](11-relays.md) | Decisions agreed, formats needed |
+| Profile backup | [13](13-backup.md) | Format agreed, implementation in Shum-Core needed |
 | Profile isolation | [12, subsection 6](#6-profile-isolation) | Needs specification |
 | Extension rules | [12, subsection 5](#5-extension-rules) | Needs specification |
 

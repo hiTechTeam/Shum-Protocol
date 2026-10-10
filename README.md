@@ -27,6 +27,7 @@ All specification sections are available in English and Russian, in `spec/en/` a
 | Devices, planned | [10](spec/en/10-devices.md) |
 | Profile relays, planned | [11](spec/en/11-relays.md) |
 | v1 stable scope and open decisions | [12](spec/en/12-v1-stable.md) |
+| Profile backup | [13](spec/en/13-backup.md) |
 
 “Must” and “must not” define compatibility requirements. Descriptions of current iOS behavior record what the code does. Proposed changes and unresolved questions are listed in the specification; they are not implemented features.
 

@@ -17,5 +17,6 @@ Choose a language: [English](en/README.md) · [Русский](ru/README.md).
 | 10. Multiple Devices | [English](en/10-devices.md) | [Русский](ru/10-devices.md) |
 | 11. Profile Relays and Relay Networks | [English](en/11-relays.md) | [Русский](ru/11-relays.md) |
 | 12. First Stable Version, v1 Stable | [English](en/12-v1-stable.md) | [Русский](ru/12-v1-stable.md) |
+| 13. Profile Backup | [English](en/13-backup.md) | [Русский](ru/13-backup.md) |
 
 The top-level section files preserve links from clients and the website. Full texts are in `en/` and `ru/`.
