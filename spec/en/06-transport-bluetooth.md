@@ -131,6 +131,7 @@ Each direction starts counter=0. Sending stops at UInt32.max-1; beyond that esta
 ```text
 plaintext = 41 || ShumPacket JSON          # up to 24000 JSON bytes
 plaintext = 40 || ShumProfilePacket JSON   # up to 6144 JSON bytes
+plaintext = 42 || 01 || RSSI int8          # signal report, subsection 8
 ```
 
 One type byte without a length, followed by Data. After encryption, use binary noiseEncrypted11, signature=nil, version1, ttl7 and recipient=routing ID. Noise X ciphertext inside the envelope remains another encryption layer. A Shum courier opens its own XX session with the depositor, then stores the envelope still sealed for the recipient.
@@ -168,6 +169,8 @@ distance = max(1, round(10^((-59 - median) / 20)))  # integer meters
 ```
 
 No valid RSSI means nil, not zero meters. This estimate assumes -59 dBm at one meter and exponent two; walls and device placement affect RSSI. Shum nearby membership also requires a card with a Noise key matching the established session. Seeing the service UUID alone is insufficient.
+
+**Signal report (type 42).** A peripheral cannot read the RSSI of a central connected to it, so without help only the central knows the distance; Windows and Linux nodes are always centrals. A node that reads the local RSSI of a link bound to a peer with an established Noise session sends that reading to the peer: `42 || version 01 || RSSI` as a signed byte, no more often than once per five seconds per link, and only for -127…-1. The receiver accepts it only from the peer's established session, only when the frame arrived over a direct link of that peer (a relayed frame says nothing about distance) and only for -127…-1, and stores it as a sample of that link for the formula above. Unknown versions are ignored. A client that does not know type 42 drops it like any unknown typed payload, so the report needs no capability flag.
 
 ## Test vectors
 
