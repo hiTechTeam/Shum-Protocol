@@ -13,11 +13,11 @@ v1 draft, Shum-iOS 5b8efc8. Sources under Shum-iOS/ShumiOS/:
 
 UTF-8 JSON with required integer version = 1. Other fields are optional. Encoding omits nil; decoding JSON null also yields nil. Codable ignores unknown fields. Missing required fields do not take Swift declaration defaults: missing version is an error.
 
-Primary fields: card, envelope, receipt, invitation, typing, presence, profileSync, retract, reaction, ownCopy, ownRead. **Exactly one** must be present. ShumMessageStore.receive checks this, not JSONDecoder or ShumPacket itself.
+Primary fields: card, envelope, receipt, invitation, typing, presence, profileSync, retract, reaction, ownCopy, ownRead, ownReaction, ownRetract. **Exactly one** must be present. ShumMessageStore.receive checks this, not JSONDecoder or ShumPacket itself.
 
 Auxiliary hopCount (integer) and invitationAvatar (object) are not counted. hopCount is used only with envelope. invitationAvatar reaches the invitation handler, which currently ignores it. An unrelated auxiliary field does not itself invalidate a packet. Clients must create meaningful combinations while retaining actual read compatibility.
 
-ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ownCopy, ownRead, presence, profileSync, reaction, receipt, retract, typing, version, omitting absent fields. Nested objects are also sorted under section 02. There is no whole-packet signature: contents are signed separately. The decoded packet limit is **24 000 bytes**, both for BLE and Shum content within Nostr.
+ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ownCopy, ownReaction, ownRead, ownRetract, presence, profileSync, reaction, receipt, retract, typing, version, omitting absent fields. Nested objects are also sorted under section 02. There is no whole-packet signature: contents are signed separately. The decoded packet limit is **24 000 bytes**, both for BLE and Shum content within Nostr.
 
 | Field | Contents | Signer |
 | :--- | :--- | :--- |
@@ -32,6 +32,8 @@ ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ow
 | reaction | ShumReactionControl | Reaction author |
 | ownCopy | Own copy, section 8 | Inner envelope's sender; the profile's own Nostr key |
 | ownRead | Own read marks, section 8 | The profile's own Nostr key |
+| ownReaction | Own reaction, section 8 | The profile; the profile's own Nostr key |
+| ownRetract | Own retract, section 8 | The profile; the profile's own Nostr key |
 
 Cards inside a signed object enter its signing bytes in full, including their own signatures. Section 05 describes binding to authenticated transport senders and pinned keys.
 
@@ -190,7 +192,7 @@ v1 has no clear packet. clearDirectoryEntry calls local deleteConversation, dele
 
 A profile restored from a backup on several devices shares its keys. Every
 device reads what contacts send, because it is wrapped to the profile's
-Nostr key; what a device sends is wrapped to the contact only. These two
+Nostr key; what a device sends is wrapped to the contact only. These
 packets let the profile's other devices show it too. They travel only over
 Nostr, wrapped to the profile's own Nostr key, and a receiver accepts them
 only when the wrap's sender is that same key.
@@ -208,6 +210,22 @@ messages from before own copies existed are not copied.
 ownRead lists the IDs (UUIDs, 1 to 200) of messages read on another device.
 The receiver marks them read and sends no receipts: the reading device did.
 It is not stored; a lost one leaves the messages unread on that device.
+
+ownReaction and ownRetract carry the very reaction and retract controls from
+section 2 that the contact got, unchanged. Their sender must have the
+receiving profile's ID and signing key, and the control must be valid now.
+A device sends ownReaction for every reaction it sets or clears. The receiver
+applies it to its own mark on that message by the usual newer-wins rule, only
+when it holds that message in the conversation with the control's recipient;
+otherwise it drops it.
+
+A device sends ownRetract when it withdraws a message its other devices may
+hold: one copied there, or one it shows from another device. The receiver
+drops that outgoing message with its reactions, provided the message's
+recipient is the control's recipient, and remembers the ID until the
+control expires, so a copy that arrives later stays away. It sends nothing
+to the contact: the withdrawing device does. Neither packet is stored; a
+lost one leaves the old state on that device.
 
 ## Test vectors
 
