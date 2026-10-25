@@ -13,11 +13,11 @@ v1 draft, Shum-iOS 5b8efc8. Sources under Shum-iOS/ShumiOS/:
 
 UTF-8 JSON with required integer version = 1. Other fields are optional. Encoding omits nil; decoding JSON null also yields nil. Codable ignores unknown fields. Missing required fields do not take Swift declaration defaults: missing version is an error.
 
-Primary fields: card, envelope, receipt, invitation, typing, presence, profileSync, retract, reaction. **Exactly one** must be present. ShumMessageStore.receive checks this, not JSONDecoder or ShumPacket itself.
+Primary fields: card, envelope, receipt, invitation, typing, presence, profileSync, retract, reaction, ownCopy, ownRead. **Exactly one** must be present. ShumMessageStore.receive checks this, not JSONDecoder or ShumPacket itself.
 
 Auxiliary hopCount (integer) and invitationAvatar (object) are not counted. hopCount is used only with envelope. invitationAvatar reaches the invitation handler, which currently ignores it. An unrelated auxiliary field does not itself invalidate a packet. Clients must create meaningful combinations while retaining actual read compatibility.
 
-ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, presence, profileSync, reaction, receipt, retract, typing, version, omitting absent fields. Nested objects are also sorted under section 02. There is no whole-packet signature: contents are signed separately. The decoded packet limit is **24 000 bytes**, both for BLE and Shum content within Nostr.
+ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ownCopy, ownRead, presence, profileSync, reaction, receipt, retract, typing, version, omitting absent fields. Nested objects are also sorted under section 02. There is no whole-packet signature: contents are signed separately. The decoded packet limit is **24 000 bytes**, both for BLE and Shum content within Nostr.
 
 | Field | Contents | Signer |
 | :--- | :--- | :--- |
@@ -30,6 +30,8 @@ ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, pr
 | profileSync | ShumProfileSync | Transmitted profile owner |
 | retract | ShumRetractControl | Retracted message author |
 | reaction | ShumReactionControl | Reaction author |
+| ownCopy | Own copy, section 8 | Inner envelope's sender; the profile's own Nostr key |
+| ownRead | Own read marks, section 8 | The profile's own Nostr key |
 
 Cards inside a signed object enter its signing bytes in full, including their own signatures. Section 05 describes binding to authenticated transport senders and pinned keys.
 
@@ -183,6 +185,29 @@ Four NUL separators, no trailing NUL. UInt64 is decimal without rounding. This r
 ## 7. Clearing a chat
 
 v1 has no clear packet. clearDirectoryEntry calls local deleteConversation, deletes history and receipts, retains contact and invitation phase, and creates temporary tombstones for known messages. The other participant receives nothing. Removing a contact is another local mode of the same function. Clearing on all devices requires v2.
+
+## 8. Own copies for the profile's other devices
+
+A profile restored from a backup on several devices shares its keys. Every
+device reads what contacts send, because it is wrapped to the profile's
+Nostr key; what a device sends is wrapped to the contact only. These two
+packets let the profile's other devices show it too. They travel only over
+Nostr, wrapped to the profile's own Nostr key, and a receiver accepts them
+only when the wrap's sender is that same key.
+
+ownCopy is a message sent from another device: `envelope`, exactly as the
+contact received it, and `plaintext`, its ShumMessagePlaintext from section
+03, which the envelope hides from everyone but the contact. The envelope's
+sender must have the receiving profile's ID and signing key; the envelope
+must be valid now and the plaintext must match it. The receiver shows the
+message as sent and never delivers it itself: the sending device does.
+Receipts from the contact reach every device, so the status follows. A
+device offers each copy at most every 30 seconds until a relay accepts it;
+messages from before own copies existed are not copied.
+
+ownRead lists the IDs (UUIDs, 1 to 200) of messages read on another device.
+The receiver marks them read and sends no receipts: the reading device did.
+It is not stored; a lost one leaves the messages unread on that device.
 
 ## Test vectors
 
