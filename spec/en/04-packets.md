@@ -13,11 +13,11 @@ v1 draft, Shum-iOS 5b8efc8. Sources under Shum-iOS/ShumiOS/:
 
 UTF-8 JSON with required integer version = 1. Other fields are optional. Encoding omits nil; decoding JSON null also yields nil. Codable ignores unknown fields. Missing required fields do not take Swift declaration defaults: missing version is an error.
 
-Primary fields: card, envelope, receipt, invitation, typing, presence, profileSync, retract, reaction, ownCopy, ownRead, ownReaction, ownRetract, ownClear. **Exactly one** must be present. ShumMessageStore.receive checks this, not JSONDecoder or ShumPacket itself.
+Primary fields: card, envelope, receipt, invitation, typing, presence, profileSync, retract, reaction, ownCopy, ownRead, ownReaction, ownRetract, ownClear, ownInvitation. **Exactly one** must be present. ShumMessageStore.receive checks this, not JSONDecoder or ShumPacket itself.
 
 Auxiliary hopCount (integer) and invitationAvatar (object) are not counted. hopCount is used only with envelope. invitationAvatar reaches the invitation handler, which currently ignores it. An unrelated auxiliary field does not itself invalidate a packet. Clients must create meaningful combinations while retaining actual read compatibility.
 
-ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ownClear, ownCopy, ownReaction, ownRead, ownRetract, presence, profileSync, reaction, receipt, retract, typing, version, omitting absent fields. Nested objects are also sorted under section 02. There is no whole-packet signature: contents are signed separately. The decoded packet limit is **24 000 bytes**, both for BLE and Shum content within Nostr.
+ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ownClear, ownCopy, ownInvitation, ownReaction, ownRead, ownRetract, presence, profileSync, reaction, receipt, retract, typing, version, omitting absent fields. Nested objects are also sorted under section 02. There is no whole-packet signature: contents are signed separately. The decoded packet limit is **24 000 bytes**, both for BLE and Shum content within Nostr.
 
 | Field | Contents | Signer |
 | :--- | :--- | :--- |
@@ -35,6 +35,7 @@ ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ow
 | ownReaction | Own reaction, section 8 | The profile; the profile's own Nostr key |
 | ownRetract | Own retract, section 8 | The profile; the profile's own Nostr key |
 | ownClear | Own cleared chat, section 8 | The profile's own Nostr key |
+| ownInvitation | Own invitation step, section 8 | The profile; the profile's own Nostr key |
 
 Cards inside a signed object enter its signing bytes in full, including their own signatures. Section 05 describes binding to authenticated transport senders and pinned keys.
 
@@ -236,6 +237,19 @@ with a timestamp not after it, their reactions and what is still owed for
 them. Later messages stay. Cleared IDs are remembered until the messages
 expire, so they do not come back from a relay. It is not stored; a lost
 one leaves the chat on that device. Clearing stays local for the contact.
+
+ownInvitation carries, unchanged, an invitation control from section 2 that
+the profile sent from another device: a request, an accept or a decline.
+Its sender must have the receiving profile's ID and signing key, and it must
+be valid now. Unless this device already took a newer step with that
+contact (by timestamp, then ID), it takes the same one: a request makes the
+contact an outgoing request, an accept makes it accepted, a decline
+declines it locally; an accept or decline also drops the contact's waiting
+request. Answers to that contact still queued here with an older timestamp
+are not sent. It sends nothing to the contact: the other device did. It is
+not stored; a lost one leaves the old state on that device.
+
+A profile never adds or invites itself: its own card is not a contact.
 
 ## Test vectors
 
