@@ -142,9 +142,11 @@ UTF-8 JSON, `version` обязательное целое 1. Остальные 
 ### 2.5. Реакция
 
 Дополнительные поля: обязательный `messageID` (UUID), необязательный
-`reaction`: одна из строк `heart`, `like`, `dislike`, `laugh`, `fire`,
-`coffin`, `hundred`, `horror`. Отсутствующее / `null` поле означает снять
-реакцию. Swift при создании снятия опускает поле.
+`reaction`: одно из 45 имён общего набора реакций и стикеров, по порядку
+показа: `heart`, `like`, `dislike`, `laugh`, `fire`, `coffin`, `hundred`, `horror`, `adore`, `wow`, `sad`, `angry`, `hmm`, `party`, `wave`, `ok`, `peace`, `crossed`, `rock`, `shaka`, `fist`, `clap`, `ghost`, `person`, `cool`, `eyes`, `crabLyublyu`, `crabObnimayu`, `crabPlachu`, `crabShok`, `crabUra`, `crabIcon`, `catLyublyu`, `catRyba`, `catEda`, `catKorobka`, `catTygydyk`, `catShshsh`, `catBuhanka`, `catUps`, `catIcon`, `bunZlyus`, `bunPlachu`, `bunIcon`, `frogIcon`. Первые 8 были в
+v1; клиент, который не знает имени, отбрасывает пакет. Картинки набора
+(эмодзи 16 × 16, персонажи 32 × 32) лежат в Shum-Core `pool`. Отсутствующее /
+`null` поле означает снять реакцию. Swift при создании снятия опускает поле.
 
 Порядок: `expiresAt`, `id`, `messageID`, `reaction` при наличии, `recipient`,
 `sender`, `signature`, `timestamp`, `version`. По одному актуальному значению

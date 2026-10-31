@@ -95,7 +95,7 @@ iOS uses this to cancel one's own undelivered outbound message. The recipient ma
 
 ### 2.5. Reaction
 
-Required messageID (UUID); optional reaction, one of heart, like, dislike, laugh, fire, coffin, hundred, horror. An absent or null reaction removes it. Swift omits the field when creating a removal.
+Required messageID (UUID); optional reaction, one of the 45 names of the shared set of reactions and stickers, in display order: heart, like, dislike, laugh, fire, coffin, hundred, horror, adore, wow, sad, angry, hmm, party, wave, ok, peace, crossed, rock, shaka, fist, clap, ghost, person, cool, eyes, crabLyublyu, crabObnimayu, crabPlachu, crabShok, crabUra, crabIcon, catLyublyu, catRyba, catEda, catKorobka, catTygydyk, catShshsh, catBuhanka, catUps, catIcon, bunZlyus, bunPlachu, bunIcon, frogIcon. The first 8 were in v1; a client that does not know a name drops the packet. The set's pictures (emoji 16 x 16, characters 32 x 32) are in Shum-Core `pool`. An absent or null reaction removes it. Swift omits the field when creating a removal.
 
 Order: expiresAt, id, messageID, reaction if present, recipient, sender, signature, timestamp, version. One current value per messageID/author pair. Removal is retained as a tombstone with the signal time and ID. Ordering rules are in section 05.
 
