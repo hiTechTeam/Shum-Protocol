@@ -13,11 +13,11 @@ v1 draft, Shum-iOS 5b8efc8. Sources under Shum-iOS/ShumiOS/:
 
 UTF-8 JSON with required integer version = 1. Other fields are optional. Encoding omits nil; decoding JSON null also yields nil. Codable ignores unknown fields. Missing required fields do not take Swift declaration defaults: missing version is an error.
 
-Primary fields: card, envelope, receipt, invitation, typing, presence, profileSync, retract, reaction, ownCopy, ownRead, ownReaction, ownRetract, ownClear, ownInvitation. **Exactly one** must be present. ShumMessageStore.receive checks this, not JSONDecoder or ShumPacket itself.
+Primary fields: card, envelope, receipt, invitation, typing, presence, profileSync, retract, reaction, ownCopy, ownRead, ownReaction, ownRetract, ownClear, ownInvitation, photoPart. **Exactly one** must be present. ShumMessageStore.receive checks this, not JSONDecoder or ShumPacket itself.
 
 Auxiliary hopCount (integer) and invitationAvatar (object) are not counted. hopCount is used only with envelope. invitationAvatar reaches the invitation handler, which currently ignores it. An unrelated auxiliary field does not itself invalidate a packet. Clients must create meaningful combinations while retaining actual read compatibility.
 
-ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ownClear, ownCopy, ownInvitation, ownReaction, ownRead, ownRetract, presence, profileSync, reaction, receipt, retract, typing, version, omitting absent fields. Nested objects are also sorted under section 02. There is no whole-packet signature: contents are signed separately. The decoded packet limit is **24 000 bytes**, both for BLE and Shum content within Nostr.
+ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ownClear, ownCopy, ownInvitation, ownReaction, ownRead, ownRetract, photoPart, presence, profileSync, reaction, receipt, retract, typing, version, omitting absent fields. Nested objects are also sorted under section 02. There is no whole-packet signature: contents are signed separately. The decoded packet limit is **24 000 bytes**, both for BLE and Shum content within Nostr.
 
 | Field | Contents | Signer |
 | :--- | :--- | :--- |
@@ -36,6 +36,7 @@ ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ow
 | ownRetract | Own retract, section 8 | The profile; the profile's own Nostr key |
 | ownClear | Own cleared chat, section 8 | The profile's own Nostr key |
 | ownInvitation | Own invitation step, section 8 | The profile; the profile's own Nostr key |
+| photoPart | Part of a photo, section 9 | None: sealed with the photo's key |
 
 Cards inside a signed object enter its signing bytes in full, including their own signatures. Section 05 describes binding to authenticated transport senders and pinned keys.
 
@@ -251,6 +252,77 @@ not stored; a lost one leaves the old state on that device.
 
 A profile never adds or invites itself: its own card is not a contact.
 
+## 9. Photos
+
+A photo travels like an attachment in other messengers: the message carries
+a fresh key and a hash, and the photo itself goes in parts sealed with that
+key. Parts carry no cards and no signatures: only someone who read the
+message can open or forge them.
+
+### 9.1. photo in the message
+
+| Field | Type | Value / validation |
+| :--- | :--- | :--- |
+| type | String | Exactly image/jpeg |
+| size | Integer | Bytes of the JPEG, 1 through 131 072 |
+| sha256 | String | 64 lowercase hex characters, SHA-256 of the JPEG bytes |
+| key | Data | 32 random bytes, fresh for every photo |
+| width | Integer | Pixels, 1 through 2048 |
+| height | Integer | Pixels, 1 through 2048 |
+| caption | Boolean | Whether text is a caption, section 03.4 |
+
+The JPEG is cut into parts of 12 288 bytes, the last one shorter:
+`count = ceil(size / 12288)`, at most 11.
+
+The sender strips metadata (location, camera, time) before hashing, so the
+photo carries pixels only. Clients send a long side of about 1280 pixels and
+about 100 KB; the limits above are for receiving.
+
+### 9.2. photoPart
+
+A primary packet field with three required fields:
+
+| Field | Type | Value / validation |
+| :--- | :--- | :--- |
+| messageID | String | UUID of the message whose photo this is |
+| index | Integer | 0 through count - 1 |
+| data | Data | Sealed part, below |
+
+```text
+nonce = 00 00 00 00 || LE64(index)
+aad   = UTF8("shum.photo-part.v1") || 00 || UTF8(messageID)
+data  = ChaCha20-Poly1305(photo.key, nonce, aad, part) || tag
+```
+
+Every part but the last holds 12 288 bytes; the last holds the rest. A
+packet carries one part and stays within the 24 000-byte packet limit.
+
+### 9.3. Sending
+
+The sender sends the message as usual and right after it every part: over
+Bluetooth to a directly connected recipient, and over Nostr wrapped to the
+recipient. Parts are never couriered. When it copies the message to its
+other devices (section 8), it also sends them the parts, wrapped to its own
+Nostr key. While the message waits for its delivery receipt, every resend of
+the envelope is followed by all its parts.
+
+### 9.4. Receiving
+
+A receiver accepts a part only for a message it holds with photo, whose
+envelope has not expired, and only if it opens with that photo's key and has
+the expected length. Parts that arrive before their message may wait: at
+most 64 parts, for an hour. When every part is in, the receiver joins them
+and checks size and sha256; on a mismatch it drops all parts and waits for
+them again.
+
+The delivery receipt (section 3) for a message with photo leaves only once
+the photo is complete and checked, so the sender keeps resending until the
+photo is there. A receiver that does not know photos acknowledges the text as
+before. A photo still missing when the envelope expires stays missing.
+
+Copies on the profile's other devices take parts the same way, from their
+sender or from the profile's own key, and send no receipt.
+
 ## Test vectors
 
 Generator: ShumProtocolVectorTests.controlPackets and profilePackets.
@@ -261,6 +333,7 @@ Generator: ShumProtocolVectorTests.controlPackets and profilePackets.
 | 04-profile-sync.json | Signed profileSync with/without knownRecipient, wrong recipient, weak recipientID validation |
 | 04-invitation-avatar.json | Real PNG, separate signing bytes, validation and decline prohibition |
 | 04-profile-packets.json | Every profile kind, manifest, revision, UInt64.max, photo and invalid name |
+| 04-photo.json | One sealed photo part: key, message ID, nonce, AAD, JPEG and data |
 
 ## Questions
 
