@@ -91,6 +91,7 @@ validate does not decrypt. An arbitrary signed 12 000-byte array may pass it but
 | text | String | Nonempty, at most 4096 UTF-8 bytes |
 | reply | Optional object | Omitted when nil, below |
 | photo | Optional object | A photo, section 04.9; omitted when nil |
+| sticker | Optional string | A sticker's name from Shum-Core `stickers`; omitted when nil |
 
 reply requires string fields messageID, senderID and text. messageID is nonempty and at most 255 UTF-8 bytes; it **need not be a UUID**. text is nonempty and at most 4096 bytes. senderID identifies either participant. This is a quotation snapshot; existence of the original message is not checked.
 
@@ -98,6 +99,11 @@ With photo, text is the caption when photo.caption is true. Otherwise it is
 a stand-in such as "Photo" for clients that do not know photos, and clients
 that do never show it. text stays nonempty either way, so older clients show
 the stand-in and acknowledge the message as before.
+
+With sticker, text is the sticker's emoji and word, such as "☕ чай", shown
+by clients without stickers and by those that do not know the name. The name
+is nonempty, at most 64 bytes, Latin letters and digits only; otherwise the
+plaintext is rejected. Only a known name can be sent.
 
 Sending trims text with .whitespacesAndNewlines and checks 4096 bytes. Receiving does not trim: a nonempty whitespace-only string passes the text check. Signatures and encryption use original UTF-8 bytes without Unicode normalization.
 
