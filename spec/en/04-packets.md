@@ -13,11 +13,11 @@ v1 draft, Shum-iOS 5b8efc8. Sources under Shum-iOS/ShumiOS/:
 
 UTF-8 JSON with required integer version = 1. Other fields are optional. Encoding omits nil; decoding JSON null also yields nil. Codable ignores unknown fields. Missing required fields do not take Swift declaration defaults: missing version is an error.
 
-Primary fields: card, envelope, receipt, invitation, typing, presence, profileSync, retract, reaction, ownCopy, ownRead, ownReaction, ownRetract, ownClear, ownInvitation, photoPart. **Exactly one** must be present. ShumMessageStore.receive checks this, not JSONDecoder or ShumPacket itself.
+Primary fields: card, envelope, receipt, invitation, typing, presence, profileSync, retract, reaction, ownCopy, ownRead, ownReaction, ownRetract, ownClear, ownInvitation, ownState, photoPart. **Exactly one** must be present. ShumMessageStore.receive checks this, not JSONDecoder or ShumPacket itself.
 
 Auxiliary hopCount (integer) and invitationAvatar (object) are not counted. hopCount is used only with envelope. invitationAvatar reaches the invitation handler, which currently ignores it. An unrelated auxiliary field does not itself invalidate a packet. Clients must create meaningful combinations while retaining actual read compatibility.
 
-ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ownClear, ownCopy, ownInvitation, ownReaction, ownRead, ownRetract, photoPart, presence, profileSync, reaction, receipt, retract, typing, version, omitting absent fields. Nested objects are also sorted under section 02. There is no whole-packet signature: contents are signed separately. The decoded packet limit is **24 000 bytes**, both for BLE and Shum content within Nostr.
+ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ownClear, ownCopy, ownInvitation, ownReaction, ownRead, ownRetract, ownState, photoPart, presence, profileSync, reaction, receipt, retract, typing, version, omitting absent fields. Nested objects are also sorted under section 02. There is no whole-packet signature: contents are signed separately. The decoded packet limit is **24 000 bytes**, both for BLE and Shum content within Nostr.
 
 | Field | Contents | Signer |
 | :--- | :--- | :--- |
@@ -36,6 +36,7 @@ ShumCoding key order: card, envelope, hopCount, invitation, invitationAvatar, ow
 | ownRetract | Own retract, section 8 | The profile; the profile's own Nostr key |
 | ownClear | Own cleared chat, section 8 | The profile's own Nostr key |
 | ownInvitation | Own invitation step, section 8 | The profile; the profile's own Nostr key |
+| ownState | The profile's state, section 8.1 | The profile's own Nostr key |
 | photoPart | Part of a photo, section 9 | None: sealed with the photo's key |
 
 Cards inside a signed object enter its signing bytes in full, including their own signatures. Section 05 describes binding to authenticated transport senders and pinned keys.
@@ -251,6 +252,43 @@ are not sent. It sends nothing to the contact: the other device did. It is
 not stored; a lost one leaves the old state on that device.
 
 A profile never adds or invites itself: its own card is not a contact.
+
+### 8.1. ownState
+
+The packets above carry single steps, and a step lost while a device was
+off stays lost. ownState carries the state itself, so devices that missed
+something agree again with the next one.
+
+| Field | Type | Value / validation |
+| :--- | :--- | :--- |
+| card | Card | The profile's own card, with its keys |
+| page | Integer | 0 through pages - 1 |
+| pages | Integer | 1 through 100 |
+| contacts | Array | Up to 20 entries, below |
+
+Each entry:
+
+| Field | Type | Value / validation |
+| :--- | :--- | :--- |
+| card | Card | The contact's card, valid, not the profile's own |
+| phase | String | ready, accepted, incomingPending, outgoingPending, declinedLocally or declinedByPeer |
+| updatedAt | Int64 | When this phase was reached, milliseconds |
+| eventID | String | The step that reached it, 1 to 255 bytes; "-" for ready |
+| blocked | Boolean | Whether the contact is blocked |
+| blockedAt | Int64 | When it was last blocked or unblocked; 0 when unknown |
+
+A device sends every page, wrapped to its own Nostr key, when it starts,
+a few seconds after its own card, an invitation step or a block changes,
+and every hour while it runs. A contact in phase ready is included only for
+its block decision.
+
+The receiver accepts pages only from its own Nostr key, with a card that
+has the profile's keys. It takes the card when Card.preferred picks it over
+its own. For each entry it merges the contact's card as usual; takes the
+phase when (updatedAt, eventID) is newer than its own step with that
+contact, never taking ready, with the same effects as ownInvitation; and blocks or unblocks
+when blockedAt is newer than its own block decision. It sends nothing to
+contacts: the device that took the step did. Pages are not stored.
 
 ## 9. Photos
 
